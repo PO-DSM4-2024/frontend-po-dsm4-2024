@@ -1,5 +1,5 @@
-import create from "zustand";
-import axios from "axios";
+import { create } from 'zustand';
+import axios from 'axios';
 
 const useAuthStore = create((set) => ({
   user: null,
@@ -12,7 +12,8 @@ const useAuthStore = create((set) => ({
       });
       set({ user: response.data.user, error: null });
     } catch (error) {
-      set({ error: error.response.data.message });
+      const errorMessage = error.response?.data?.message || 'login Error'
+      set({ error: errorMessage });
     }
   },
   logout: () => set({ user: null, error: null }),
