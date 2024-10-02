@@ -65,12 +65,14 @@
   }
   
   .input-group input {
-    width: 100%;
+    width: 107%;
     font-family: nunito;
     padding: 13px 59px;
     font-size: 1.3rem;
     border: 2px solid #677C91;
     border-radius: 10px;
+    background-color: #ffffff;
+    color: #2C3E50;
   }
   
   .input-group img {
