@@ -1,0 +1,133 @@
+@font-face {
+  font-family: nunito;
+  src: url("../../assets/fonts/Nunito-Regular.ttf");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.query_container {
+  width: 100vw;
+  height: 100vh;
+  background-color: #f2f2f2;
+  display: flex;
+  font-family: nunito;
+}
+
+.query_side_content {
+  width: 80%;
+  height: 100%;
+}
+
+.query_header {
+  width: 100%;
+  height: 150px;
+  background-color: white;
+  color: black;
+  display: flex;
+  align-items: center;
+  border-bottom: 10px solid #677c91;
+  font-size: 1.4rem;
+  color: #677c91;
+  padding-left: 30px;
+}
+
+.query_header_text > h1 {
+  font-size: 1.6rem;
+  color: #2c3e50;
+}
+
+.query_info {
+  margin-top: 26px;
+  width: 100%;
+  height: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  row-gap: 24px;
+  column-gap: 48px;
+
+  flex-wrap: wrap;
+}
+
+.query_title {
+  width: 95%;
+  height: 79px;
+  background-color: white;
+  border-radius: 5px;
+  color: black;
+
+  display: flex;
+  align-items: center;
+}
+
+.query_title_text {
+  margin-left: 40px;
+
+  font-size: 32px;
+  font-weight: 500;
+  color: #2c3e50;
+}
+
+.query_non_attendance {
+  padding: 36px;
+  width: 46%;
+  height: 85%;
+  background-color: white;
+  border-radius: 10px;
+  color: black;
+}
+
+.query_grade {
+  padding: 36px;
+  width: 46%;
+  height: 85%;
+  background-color: white;
+  border-radius: 10px;
+  color: black;
+}
+
+.query_classes {
+  padding: 36px;
+  width: 46%;
+  height: 85%;
+  background-color: white;
+  border-radius: 10px;
+  color: black;
+}
+
+.query_history {
+  padding: 36px;
+  width: 46%;
+  height: 85%;
+  background-color: white;
+  border-radius: 10px;
+  color: black;
+}
+
+.card_title {
+  font-size: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 16px;
+}
+
+.card_title p {
+  font-weight: 500;
+}
+
+.card_content {
+  font-size: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card_content p {
+  font-weight: 300;
+}
