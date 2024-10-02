@@ -1,3 +1,4 @@
+import './Menu.css'
 import Logo from '../../assets/img/logo-branca.png'
 import iconNo from '../../assets/img/icon-no.png'
 import iconClock from '../../assets/img/icon-clock.png'
@@ -8,7 +9,7 @@ import iconClass from '../../assets/img/icon-class.png'
 import iconGear from '../../assets/img/icon-gear.png'
 import iconQuit from '../../assets/img/icon-quit.png'
 
-const Menu = (studentName) => {
+const Menu = ({studentName}) => {
   return (
     <div className="menu_container">
             <div className="menu_logo">

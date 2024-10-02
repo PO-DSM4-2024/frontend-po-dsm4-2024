@@ -14,19 +14,28 @@
     display: flex;
     flex-direction: row-reverse;
     height: 100vh;
-    width: 100wh;
+    width: 100vw;
     background-color: #f5f5f5;
   }
   
   .login-left {
-    width: 100%;
-    height: 100%;
     margin-left: 90px;
     flex: 1;
     background-color: #f5f5f5;
     display: flex;
     justify-content: center;
     flex-direction: column;
+  }
+
+  .login-right {
+    flex: 1.5;
+    background-color: #2c3e50;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 100px;
+    position: relative;
   }
   
   .login_left_title{
@@ -97,17 +106,6 @@
     text-decoration: underline;
   }
   
-  .login-right {
-    flex: 1;
-    background-color: #2c3e50;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: 100px;
-    position: relative;
-  }
-  
   .login-logo {
     top: 20px;
     left: 20px;
@@ -116,8 +114,7 @@
   }
   
   .login-image {
-    width: 80%;
-    border-radius: 10px;
+    width: 70%;
   }
   
   .login-logo > img {

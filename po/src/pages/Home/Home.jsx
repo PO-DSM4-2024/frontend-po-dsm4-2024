@@ -3,6 +3,7 @@ import './Home.css'
 
 const Home = () => {
     return (
+        <>
         <div className="home_container">
         <Menu studentName={'Ana Pupo'}/>
         <div className="home_side_content">
@@ -35,6 +36,7 @@ const Home = () => {
         </div>
         </div>
         </div>
+        </>
     )
 }
 
