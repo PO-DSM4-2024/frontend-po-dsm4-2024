@@ -3,11 +3,12 @@ import useAuthStore from "../../store/useAuthStore";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
-import "./Login.css";
+import "./TeacherLogin.css";
 import Logo from "../../assets/img/logo-branca.png";
 import miniLogo from "../../assets/img/logo-azul 1.png";
 import Lock from "../../assets/img/icon-lock.png";
 import Email from "../../assets/img/icon-email.png";
+import Hat from "../../assets/img/icon-hat.png";
 
 const schema = z.object({
   email: z.string().email("Invalid Email").min(1, "Email is required"),
@@ -37,7 +38,7 @@ const Login = () => {
       <div className="login-left">
         <img src={miniLogo} alt="" id="mini-logo" />
         <div className="login_left_title">
-          <h1>Portal do Aluno</h1>
+          <h1>Portal do Professor</h1>
           <p>Faça o login para acessar a sua conta</p>
         </div>
         <form onSubmit={handleSubmit(onSubmit)}>
@@ -47,7 +48,7 @@ const Login = () => {
                 Email ou senha incorreto. Tente novamente!
               </p>
             )}
-            <img src={Email} alt="Email icon" />
+            <img src={Email} className="icon" alt="Email icon" />
             <input
               type="text"
               {...register("email")}
@@ -65,14 +66,36 @@ const Login = () => {
             />
           </div>
 
+          <div className="input-group">
+          <img src={Hat} alt="Hat icon" />
+            <select className="select-container">
+              <option value="Instituição de Ensino">Instituição de Ensino</option> 
+              <option value="FATEC Americana">FATEC Americana</option>
+              <option value="FATEC Araçatuba">FATEC Araçatuba</option>
+              <option value="FATEC Araraquara">FATEC Araraquara</option>
+              <option value="FATEC Barueri">FATEC Barueri</option>
+              <option value="FATEC Bauru">FATEC Bauru</option>
+              <option value="FATEC Botucatu">FATEC Botucatu</option>
+              <option value="FATEC Carapicuíba">FATEC Carapicuíba</option>
+              <option value="FATEC Diadema">FATEC Diadema</option>
+              <option value="FATEC Franca">FATEC Franca</option>
+              <option value="FATEC Garça">FATEC Garça</option>
+              <option value="FATEC Guaratinguetá">FATEC Guaratinguetá</option>
+              <option value="FATEC Registro">FATEC Registro</option>
+              <option value="FATEC Ribeirão Preto">FATEC Ribeirão Preto</option>
+              <option value="FATEC São Bernardo do Campo">FATEC São Bernardo do Campo</option>
+              <option value="FATEC São Paulo">FATEC São Paulo</option>
+            </select>
+          </div>
+
           <button type="submit" className="login-button">
             Entrar
           </button>
 
           {error && <p style={{ color: "red" }}>{error}</p>}
           <div className="login_left_bottom">
-            <Link className="forgot-link" to={"/teacherLogin"}>
-              Sou funcionário
+            <Link className="forgot-link" to={"/"}>
+              Sou Aluno
             </Link>
           </div>
         </form>
