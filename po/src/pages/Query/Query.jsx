@@ -1,18 +1,14 @@
-import Menu from "../../components/Menu/Menu";
 import "./Query.css";
+import Menu from "../../components/Menu/Menu";
 import ArrowLeft from "../../assets/img/arrow-left.png";
+import Panel from "../../components/Panel/Panel"
 
 const Query = () => {
   return (
     <div className="query_container">
       <Menu studentName={"Ana Pupo"} />
       <div className="query_side_content">
-        <div className="query_header">
-          <div className="query_header_text">
-            <h1>Painel do Aluno</h1>
-            <p>Consultas</p>
-          </div>
-        </div>
+        <Panel pageName="Painel do Aluno" section="Consultas" color="#677C91" />
         <div className="query_info">
           <div className="query_title">
             <p className="query_title_text">Consultas</p>
