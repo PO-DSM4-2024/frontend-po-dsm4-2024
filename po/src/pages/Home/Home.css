@@ -10,16 +10,19 @@
 }
 
 .home_container {
+  top: 0;
   width: 100vw;
-  height: 100vh;
   background-color: #f2f2f2;
   display: flex;
   font-family: nunito;
 }
 
 .home_side_content {
-  width: 80%;
-  height: 100%;
+  top: 0;
+  width: 81%;
+  height: 1000px;
+  background-color: #f2f2f2;
+  margin-left: 19.1%;
 }
 
 .home_info_top {
