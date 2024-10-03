@@ -13,7 +13,7 @@ const Query = () => {
           <div className="query_title">
             <p className="query_title_text">Consultas</p>
           </div>
-          <div className="query_non_attendance">
+          <div className="query_card">
             <div className="card_title">
               <p>Faltas</p>
               <img src={ArrowLeft} alt="" />
@@ -25,7 +25,7 @@ const Query = () => {
               </p>
             </div>
           </div>
-          <div className="query_grade">
+          <div className="query_card">
             <div className="card_title">
               <p>Notas</p>
               <img src={ArrowLeft} alt="" />
@@ -37,7 +37,7 @@ const Query = () => {
               </p>
             </div>
           </div>
-          <div className="query_classes">
+          <div className="query_card">
             <div className="card_title">
               <p>Aulas</p>
               <img src={ArrowLeft} alt="" />
@@ -49,7 +49,7 @@ const Query = () => {
               </p>
             </div>
           </div>
-          <div className="query_history">
+          <div className="query_card">
             <div className="card_title">
               <p>Histórico</p>
               <img src={ArrowLeft} alt="" />
