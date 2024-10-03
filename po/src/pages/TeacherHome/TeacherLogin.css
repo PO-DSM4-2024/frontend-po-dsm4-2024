@@ -40,7 +40,7 @@
   }
   
   .login_left_title{
-    margin-bottom: 80px;
+    margin-bottom: 55px;
   }
   
   .login-left h1 {
@@ -61,7 +61,7 @@
   
   form {
     width: 100%;
-    height: 32%;
+    height: 40%;
   }
   
   .input-group input {
@@ -69,7 +69,8 @@
     font-family: nunito;
     padding: 13px 59px;
     font-size: 1.3rem;
-    border: 2px solid #677C91;
+    border: 3px solid #677C91;
+    outline: none;
     border-radius: 10px;
     background-color: #ffffff;
     color: #2C3E50;
@@ -77,9 +78,15 @@
   
   .input-group img {
    position: absolute;
-   margin-top: 7.7px;
+   margin-top: 10.7px;
    margin-left: 10px;
   }
+
+  .icon {
+    position: absolute;
+    margin-top: 8.7px;
+    margin-left: 10px;
+   }
   
   .login-button {
     margin-top: 70px;
@@ -89,6 +96,7 @@
     border: none;
     border-radius: 10px;
     cursor: pointer;
+    margin-bottom: 20px;
     font-size: 1.3rem;
   }
   
@@ -99,11 +107,24 @@
   .forgot-link {
     text-decoration: underline;
     margin-top: 2px;
-    margin-left: 18%;
+    margin-left: 20.2%;
     font-size: 1.2rem;
     color: #3C5874;
     text-decoration: none;
   }
+
+  .select-container {
+    width: 107%;
+    font-family: nunito;
+    padding: 13px 59px;
+    font-size: 1.3rem;
+    border: 3px solid #677C91;
+    border-radius: 10px;
+    background-color: #ffffff;
+    color: #636d76;
+    outline: none;
+}
+
   
   .forgot-link:hover {
     text-decoration: underline;

@@ -1,5 +1,6 @@
 import Menu from '../../components/Menu/Menu'
 import './Home.css'
+import Panel from '../../components/Panel/Panel'
 
 const Home = () => {
     return (
@@ -7,12 +8,7 @@ const Home = () => {
         <div className="home_container">
         <Menu studentName={'Ana Pupo'}/>
         <div className="home_side_content">
-        <div className="home_header">
-            <div className="home_header_text">
-            <h1>Painel do Aluno</h1>
-            <p>Início</p>
-            </div>
-        </div>
+        <Panel pageName="Painel do Aluno" section="Início" color="orange"/>
         <div className="home_info_top">
         <div className="home_profile_student">
             <div className="card_title"><p>Perfil do Aluno</p></div>
