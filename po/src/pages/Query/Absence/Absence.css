@@ -1,0 +1,132 @@
+@font-face {
+  font-family: nunito;
+  src: url('../../assets/fonts/Nunito-Regular.ttf');
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+.absence_container {
+  top: 0;
+  width: 100vw;
+  background-color: #f2f2f2;
+  display: flex;
+  font-family: nunito;
+}
+
+.absence_side_content {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 81%;
+  min-height: 100%;
+  background-color: #f2f2f2;
+  margin-left: 19.1%;
+}
+
+.absence_info {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.absence_card {
+  width: 95%;
+  background-color: white;
+
+  margin-top: 52px;
+  margin-bottom: 52px;
+  border-radius: 5px;
+}
+
+.card_title {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+}
+
+.card_title p {
+  font-size: 32px;
+  font-weight: 500;
+  color: #2c3e50;
+  margin: 20px 0px 20px 40px;
+}
+
+.card_title hr {
+  background-color: #f2f2f2;
+  width: 200px;
+  height: 4px;
+
+  outline: none;
+  border: none;
+
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.card_subject {
+  margin: 36px 0px 36px 40px;
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.card_subject label {
+  font-size: 22px;
+  font-weight: 300;
+  color: #000;
+}
+
+.card_subject select {
+  font-size: 18px;
+  font-weight: 300;
+  color: #3f3f3f;
+  background-color: #f2f2f2;
+
+  border: none;
+  outline: none;
+  border-radius: 10px;
+
+  padding: 7px 15px 7px 15px;
+}
+
+.card_table {
+  margin: 0px 40px 36px 40px;
+  border-collapse: collapse;
+  width: 93%;
+}
+
+.card_table table {
+  width: 100%;
+}
+
+.card_table th {
+  font-size: 24px;
+  color: #233058;
+  font-weight: bold;
+
+  line-height: 4rem;
+}
+
+.card_table td {
+  font-size: 24px;
+  color: #3f3f3f;
+  font-weight: bold;
+
+  line-height: 4rem;
+}
+
+.card_table td {
+  border-bottom: 2px solid #677c91;
+}
