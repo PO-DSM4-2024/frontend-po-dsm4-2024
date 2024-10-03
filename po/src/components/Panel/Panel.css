@@ -8,6 +8,7 @@
     font-size: 1.4rem;
     color: #677C91;
     padding-left: 30px;
+    justify-content: space-between;
 }
 
 .home_header_text > h1 {

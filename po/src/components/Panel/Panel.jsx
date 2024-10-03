@@ -1,4 +1,5 @@
 import './Panel.css'
+import Banner from '../../assets/img/banner-logo.png'
 
 const Panel = ({pageName, section, color}) => {
     return (
@@ -7,6 +8,7 @@ const Panel = ({pageName, section, color}) => {
             <h1>{pageName}</h1>
             <p>{section}</p>
             </div>
+        <img src={Banner} alt="" />
         </div>
     )
 }
