@@ -1,6 +1,6 @@
 @font-face {
   font-family: nunito;
-  src: url("../../assets/fonts/Nunito-Regular.ttf");
+  src: url('../../assets/fonts/Nunito-Regular.ttf');
 }
 
 * {
@@ -9,7 +9,7 @@
   box-sizing: border-box;
 }
 
-body{
+body {
   display: flex;
   flex-direction: column;
   overflow-x: hidden;

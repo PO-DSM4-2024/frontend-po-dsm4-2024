@@ -1,153 +1,150 @@
 @font-face {
-    font-family: nunito;
-    src: url('../../assets/fonts/Nunito-Regular.ttf');
-  }
-  
-  * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-  }
-  
-  .login-container {
-    font-family: nunito;
-    display: flex;
-    flex-direction: row-reverse;
-    height: 100vh;
-    width: 100vw;
-    background-color: #f5f5f5;
-  }
-  
-  .login-left {
-    margin-left: 90px;
-    flex: 1;
-    background-color: #f5f5f5;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-
-  }
-
-  .login-right {
-    flex: 1.5;
-    background-color: #2c3e50;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: 100px;
-    position: relative;
-  }
-  
-  .login_left_title{
-    margin-bottom: 55px;
-  }
-  
-  .login-left h1 {
-    font-size: 3rem;
-    color: #2C3E50;
-  }
-  
-  .login-left p {
-    color: #3C5874;
-    font-size: 1.4rem;
-  }
-  
-  .input-group {
-    margin-bottom: 20px;
-    width: 50%;
-  }
-  
-  
-  form {
-    width: 100%;
-    height: 40%;
-  }
-  
-  .input-group input {
-    width: 107%;
-    font-family: nunito;
-    padding: 13px 59px;
-    font-size: 1.3rem;
-    border: 3px solid #677C91;
-    outline: none;
-    border-radius: 10px;
-    background-color: #ffffff;
-    color: #2C3E50;
-  }
-  
-  .input-group img {
-   position: absolute;
-   margin-top: 10.7px;
-   margin-left: 10px;
-  }
-
-  .icon {
-    position: absolute;
-    margin-top: 8.7px;
-    margin-left: 10px;
-   }
-  
-  .login-button {
-    margin-top: 70px;
-    background-color: #ff6600;
-    color: white;
-    padding: 13px 22.5%;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    margin-bottom: 20px;
-    font-size: 1.3rem;
-  }
-  
-  .login-button:hover {
-    background-color: #e65c00;
-  }
-  
-  .forgot-link {
-    text-decoration: underline;
-    margin-top: 2px;
-    margin-left: 20.2%;
-    font-size: 1.2rem;
-    color: #3C5874;
-    text-decoration: none;
-  }
-
-  .select-container {
-    width: 107%;
-    font-family: nunito;
-    padding: 13px 59px;
-    font-size: 1.3rem;
-    border: 3px solid #677C91;
-    border-radius: 10px;
-    background-color: #ffffff;
-    color: #636d76;
-    outline: none;
+  font-family: nunito;
+  src: url('../../assets/fonts/Nunito-Regular.ttf');
 }
 
-  
-  .forgot-link:hover {
-    text-decoration: underline;
-  }
-  
-  .login-logo {
-    top: 20px;
-    left: 20px;
-    font-size: 2rem;
-    color: white;
-  }
-  
-  .login-image {
-    width: 60%;
-  }
-  
-  .login-logo > img {
-    width: 200px;
-    height: 40px;
-  }
-  
-  #mini-logo{
-    width: 45px;
-    height: 30px;
-    margin-bottom: 80px;
-  }
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.login-container {
+  font-family: nunito;
+  display: flex;
+  flex-direction: row-reverse;
+  height: 100vh;
+  width: 100vw;
+  background-color: #f5f5f5;
+}
+
+.login-left {
+  margin-left: 90px;
+  flex: 1;
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.login-right {
+  flex: 1.5;
+  background-color: #2c3e50;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 100px;
+  position: relative;
+}
+
+.login_left_title {
+  margin-bottom: 55px;
+}
+
+.login-left h1 {
+  font-size: 3rem;
+  color: #2c3e50;
+}
+
+.login-left p {
+  color: #3c5874;
+  font-size: 1.4rem;
+}
+
+.input-group {
+  margin-bottom: 20px;
+  width: 50%;
+}
+
+form {
+  width: 100%;
+  height: 40%;
+}
+
+.input-group input {
+  width: 107%;
+  font-family: nunito;
+  padding: 13px 59px;
+  font-size: 1.3rem;
+  border: 3px solid #677c91;
+  outline: none;
+  border-radius: 10px;
+  background-color: #ffffff;
+  color: #2c3e50;
+}
+
+.input-group img {
+  position: absolute;
+  margin-top: 10.7px;
+  margin-left: 10px;
+}
+
+.icon {
+  position: absolute;
+  margin-top: 8.7px;
+  margin-left: 10px;
+}
+
+.login-button {
+  margin-top: 70px;
+  background-color: #ff6600;
+  color: white;
+  padding: 13px 22.5%;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  font-size: 1.3rem;
+}
+
+.login-button:hover {
+  background-color: #e65c00;
+}
+
+.forgot-link {
+  text-decoration: underline;
+  margin-top: 2px;
+  margin-left: 20.2%;
+  font-size: 1.2rem;
+  color: #3c5874;
+  text-decoration: none;
+}
+
+.select-container {
+  width: 107%;
+  font-family: nunito;
+  padding: 13px 59px;
+  font-size: 1.3rem;
+  border: 3px solid #677c91;
+  border-radius: 10px;
+  background-color: #ffffff;
+  color: #636d76;
+  outline: none;
+}
+
+.forgot-link:hover {
+  text-decoration: underline;
+}
+
+.login-logo {
+  top: 20px;
+  left: 20px;
+  font-size: 2rem;
+  color: white;
+}
+
+.login-image {
+  width: 60%;
+}
+
+.login-logo > img {
+  width: 200px;
+  height: 40px;
+}
+
+#mini-logo {
+  width: 45px;
+  height: 30px;
+  margin-bottom: 80px;
+}

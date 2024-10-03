@@ -6,13 +6,13 @@ const useAuthStore = create((set) => ({
   error: null,
   login: async (userName, password) => {
     try {
-      const response = await axios.post("api link", {
+      const response = await axios.post('api link', {
         userName,
         password,
       });
       set({ user: response.data.user, error: null });
     } catch (error) {
-      const errorMessage = error.response?.data?.message || 'login Error'
+      const errorMessage = error.response?.data?.message || 'login Error';
       set({ error: errorMessage });
     }
   },

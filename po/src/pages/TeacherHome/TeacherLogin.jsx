@@ -1,18 +1,18 @@
-import { Link } from "react-router-dom";
-import useAuthStore from "../../store/useAuthStore";
-import { useForm } from "react-hook-form";
-import { z } from "zod";
-import { zodResolver } from "@hookform/resolvers/zod";
-import "./TeacherLogin.css";
-import Logo from "../../assets/img/logo-branca.png";
-import miniLogo from "../../assets/img/logo-azul 1.png";
-import Lock from "../../assets/img/icon-lock.png";
-import Email from "../../assets/img/icon-email.png";
-import Hat from "../../assets/img/icon-hat.png";
+import { Link } from 'react-router-dom';
+import useAuthStore from '../../store/useAuthStore';
+import { useForm } from 'react-hook-form';
+import { z } from 'zod';
+import { zodResolver } from '@hookform/resolvers/zod';
+import './TeacherLogin.css';
+import Logo from '../../assets/img/logo-branca.png';
+import miniLogo from '../../assets/img/logo-azul 1.png';
+import Lock from '../../assets/img/icon-lock.png';
+import Email from '../../assets/img/icon-email.png';
+import Hat from '../../assets/img/icon-hat.png';
 
 const schema = z.object({
-  email: z.string().email("Invalid Email").min(1, "Email is required"),
-  password: z.string().min(6, "Password must be at least 6 characters long"),
+  email: z.string().email('Invalid Email').min(1, 'Email is required'),
+  password: z.string().min(6, 'Password must be at least 6 characters long'),
 });
 
 const Login = () => {
@@ -31,7 +31,7 @@ const Login = () => {
     login(data.email, data.password);
   };
 
-  console.log("errors", errors);
+  console.log('errors', errors);
 
   return (
     <div className="login-container">
@@ -44,32 +44,20 @@ const Login = () => {
         <form onSubmit={handleSubmit(onSubmit)}>
           <div className="input-group">
             {errors.email && errors.password && (
-              <p style={{ color: "red", textWrap: "nowrap" }}>
-                Email ou senha incorreto. Tente novamente!
-              </p>
+              <p style={{ color: 'red', textWrap: 'nowrap' }}>Email ou senha incorreto. Tente novamente!</p>
             )}
             <img src={Email} className="icon" alt="Email icon" />
-            <input
-              type="text"
-              {...register("email")}
-              placeholder="E-mail Institucional"
-              required
-            />
+            <input type="text" {...register('email')} placeholder="E-mail Institucional" required />
           </div>
           <div className="input-group">
             <img src={Lock} alt="Lock icon" />
-            <input
-              type="password"
-              {...register("password")}
-              placeholder="Senha"
-              required
-            />
+            <input type="password" {...register('password')} placeholder="Senha" required />
           </div>
 
           <div className="input-group">
-          <img src={Hat} alt="Hat icon" />
+            <img src={Hat} alt="Hat icon" />
             <select className="select-container">
-              <option value="Instituição de Ensino">Instituição de Ensino</option> 
+              <option value="Instituição de Ensino">Instituição de Ensino</option>
               <option value="FATEC Americana">FATEC Americana</option>
               <option value="FATEC Araçatuba">FATEC Araçatuba</option>
               <option value="FATEC Araraquara">FATEC Araraquara</option>
@@ -92,9 +80,9 @@ const Login = () => {
             Entrar
           </button>
 
-          {error && <p style={{ color: "red" }}>{error}</p>}
+          {error && <p style={{ color: 'red' }}>{error}</p>}
           <div className="login_left_bottom">
-            <Link className="forgot-link" to={"/"}>
+            <Link className="forgot-link" to={'/'}>
               Sou Aluno
             </Link>
           </div>
@@ -104,11 +92,7 @@ const Login = () => {
         <div className="login-logo">
           <img src={Logo} alt="" />
         </div>
-        <img
-          src="src/assets/img/image.png"
-          alt="Student"
-          className="login-image"
-        />
+        <img src="src/assets/img/image.png" alt="Student" className="login-image" />
       </div>
     </div>
   );
