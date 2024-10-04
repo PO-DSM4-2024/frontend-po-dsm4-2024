@@ -2,7 +2,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home/Home';
 import Login from './pages/Login/Login';
 import Query from './pages/Query/Query';
-import TeacherLogin from './pages/TeacherHome/TeacherLogin';
+import TeacherLogin from './pages/TeacherLogin/TeacherLogin';
 import Absence from './pages/Query/Absence/Absence';
 
 const App = () => {
