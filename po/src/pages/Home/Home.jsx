@@ -7,17 +7,17 @@ import './Home.css';
 
 const Home = () => {
   return (
-    <div className="home_container">
-      <Menu studentName={'Ana Pupo'} />
-      <div className="home_side_content">
-        <Panel pageName="Painel do Aluno" section="Início" color="#F66B0E" />
-        <div className="home_info_top">
-          <div className="home_profile_student">
-            <div className="card_title">
-              <img src={iconUser} alt="user" />
-              <p>Perfil do aluno</p>
-            </div>
-            <div>
+    <>
+      <div className="home_container">
+        <Menu studentName={'Ana Clara'} />
+        <div className="home_side_content">
+          <Panel pageName="Painel do Aluno" section="Início" color="#F66B0E" />
+          <div className="home_info_top">
+            <div className="home_profile_student">
+              <div className="card_title">
+                <img src={iconUser} alt="user" />
+                <p>Perfil do Aluno</p>
+              </div>
               <div className="student_info">
                 <p>Ana luíza de Lara Pupo</p>
                 <p>4º sem</p>
@@ -58,7 +58,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

@@ -36,7 +36,7 @@
   width: 70px;
   height: 70px;
   border-radius: 50%;
-  background-image: url('../../assets/img/foto-usuario.png');
+  background-image: url('../../assets/img/img-user.png');
   background-position: center;
   background-size: cover;
 }
@@ -68,6 +68,11 @@
   font-size: 1.4rem;
 }
 
+#title{
+  font-size: 1.4rem;
+  color: white;
+}
+
 .registry_title {
   width: 100%;
   height: 20%;
@@ -94,6 +99,11 @@
   gap: 10px;
   height: 16%;
   font-size: 1.2rem;
+}
+
+#itens{
+  font-size: 1.2rem;
+  color: white;
 }
 
 .registry_itens {

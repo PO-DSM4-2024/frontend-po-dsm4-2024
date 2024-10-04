@@ -1,6 +1,6 @@
 @font-face {
   font-family: nunito;
-  src: url('../../assets/fonts/Nunito-Regular.ttf');
+  src: url('../../assets/fonts/Nunito-Regular.ttf')
 }
 
 * {
@@ -69,39 +69,13 @@ body {
   color: black;
 }
 
-.query_grade {
-  padding: 36px;
-  width: 46%;
-  height: 85%;
-  background-color: white;
-  border-radius: 10px;
-  color: black;
-}
 
-.query_classes {
-  padding: 36px;
-  width: 46%;
-  height: 85%;
-  background-color: white;
-  border-radius: 10px;
-  color: black;
-}
-
-.query_history {
-  padding: 36px;
-  width: 46%;
-  height: 85%;
-  background-color: white;
-  border-radius: 10px;
-  color: black;
-}
-
-.card_title {
+.card_titles {
   font-size: 32px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-
+  flex-direction: row;
   margin-bottom: 16px;
 }
 

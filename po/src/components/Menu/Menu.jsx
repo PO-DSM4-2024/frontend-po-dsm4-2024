@@ -8,6 +8,7 @@ import iconDanger from '../../assets/img/icon-danger.png';
 import iconClass from '../../assets/img/icon-class.png';
 import iconGear from '../../assets/img/icon-gear.png';
 import iconQuit from '../../assets/img/icon-quit.png';
+import { Link } from 'react-router-dom';
 
 const Menu = ({ studentName }) => {
   return (
@@ -21,13 +22,13 @@ const Menu = ({ studentName }) => {
       </div>
       <div className="menu_consult">
         <div className="consult_title">
-          <p>Consultas</p>
+        <Link id="title" to={'/query'}><p>Consultas</p></Link>
           <div id="string"></div>
         </div>
         <div className="consult_actions">
           <div className="consult_itens">
             <img src={iconNo} alt="no" />
-            <p>Faltas</p>
+            <Link id="itens" to={'/query/absence'}><p>Faltas</p></Link>
           </div>
           <div className="consult_itens">
             <img src={iconStar} alt="no" />

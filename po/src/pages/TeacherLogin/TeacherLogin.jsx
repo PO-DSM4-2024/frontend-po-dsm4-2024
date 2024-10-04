@@ -1,14 +1,14 @@
-import { Link } from 'react-router-dom';
-import useAuthStore from '../../store/useAuthStore';
-import { useForm } from 'react-hook-form';
-import { z } from 'zod';
-import { zodResolver } from '@hookform/resolvers/zod';
 import './TeacherLogin.css';
 import Logo from '../../assets/img/logo-branca.png';
 import miniLogo from '../../assets/img/logo-azul 1.png';
 import Lock from '../../assets/img/icon-lock.png';
 import Email from '../../assets/img/icon-email.png';
 import Hat from '../../assets/img/icon-hat.png';
+import { Link } from 'react-router-dom';
+import useAuthStore from '../../store/useAuthStore';
+import { useForm } from 'react-hook-form';
+import { z } from 'zod';
+import { zodResolver } from '@hookform/resolvers/zod';
 
 const schema = z.object({
   email: z.string().email('Invalid Email').min(1, 'Email is required'),

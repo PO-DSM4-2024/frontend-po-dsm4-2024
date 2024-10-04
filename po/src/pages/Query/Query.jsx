@@ -6,7 +6,7 @@ import Panel from '../../components/Panel/Panel';
 const Query = () => {
   return (
     <div className="query_container">
-      <Menu studentName={'Ana Pupo'} />
+      <Menu studentName={'Ana Clara'} />
       <div className="query_side_content">
         <Panel pageName="Painel do Aluno" section="Consultas" color="#677C91" />
         <div className="query_info">
@@ -14,7 +14,7 @@ const Query = () => {
             <p className="query_title_text">Consultas</p>
           </div>
           <div className="query_card">
-            <div className="card_title">
+            <div className="card_titles">
               <p>Faltas</p>
               <img src={ArrowLeft} alt="" />
             </div>
@@ -23,7 +23,7 @@ const Query = () => {
             </div>
           </div>
           <div className="query_card">
-            <div className="card_title">
+            <div className="card_titles">
               <p>Notas</p>
               <img src={ArrowLeft} alt="" />
             </div>
@@ -32,7 +32,7 @@ const Query = () => {
             </div>
           </div>
           <div className="query_card">
-            <div className="card_title">
+            <div className="card_titles">
               <p>Aulas</p>
               <img src={ArrowLeft} alt="" />
             </div>
@@ -41,7 +41,7 @@ const Query = () => {
             </div>
           </div>
           <div className="query_card">
-            <div className="card_title">
+            <div className="card_titles">
               <p>Histórico</p>
               <img src={ArrowLeft} alt="" />
             </div>
