@@ -45,7 +45,7 @@ body {
   box-shadow: 0 0px 8px #0000001a;
   width: 100%;  
   height: 349px; 
-  margin-top: 60px; 
+  margin-top: 70px; 
 }
 
 .home_profile_student, .home_calendar {
@@ -58,12 +58,12 @@ body {
 }
 
 .card_title {
-  font-size: 32px;
   display: flex;
+  flex-direction: row; 
   justify-content: flex-start;
   align-items: center;
-  gap: 10px;
-  margin-bottom: 16px; 
+  gap: 5px; 
+  margin-bottom: 16px;
 }
 
 .home_profile_student .student_info {
