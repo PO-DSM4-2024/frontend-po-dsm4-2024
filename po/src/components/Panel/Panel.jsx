@@ -8,7 +8,7 @@ const Panel = ({ pageName, section, color }) => {
         <h1>{pageName}</h1>
         <p>{section}</p>
       </div>
-      <img src={Banner} alt="" />
+      <img className='home_logo' src={Banner} alt="" />
     </div>
   );
 };

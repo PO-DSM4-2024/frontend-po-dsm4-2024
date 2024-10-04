@@ -9,12 +9,14 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: 'Nunito', sans-serif;
+}
+
 .home_container {
-  top: 0;
   width: 100vw;
   background-color: #f2f2f2;
   display: flex;
-  font-family: nunito;
 }
 
 .home_side_content {
@@ -26,33 +28,86 @@
 }
 
 .home_info_top {
-  margin-top: 2%;
-  width: 100%;
-  height: 40%;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 150px;
+  justify-content: space-between;
+  gap: 30px;
+  margin: 30px;
 }
 
-.home_profile_student {
-  padding: 20px;
-  width: 35%;
-  height: 85%;
-  background-color: white;
-  border-radius: 10px;
-  color: black;
+.home_info_below {
+  margin: 30px;
 }
 
-.home_calendar {
+.home_info_below .home_section {
+  background-color: #ffffff;
   padding: 20px;
-  width: 35%;
-  height: 85%;
-  background-color: white;
-  border-radius: 10px;
-  color: black;
+  border-radius: 7px;
+  box-shadow: 0 0px 8px #0000001a;
+  width: 100%;  
+  height: 349px; 
+  margin-top: 60px; 
+}
+
+.home_profile_student, .home_calendar {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 7px;
+  box-shadow: 0 0px 8px #0000001a;
+  width: 552px;  
+  height: auto;  
 }
 
 .card_title {
-  font-size: 20px;
+  font-size: 32px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 16px; 
 }
+
+.home_profile_student .student_info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.home_profile_student .student_info p {
+  margin: 0;
+}
+
+.home_profile_student div:nth-of-type(2) {
+  margin-bottom: 10px;
+}
+
+.home_profile_student p {
+  margin: 5px 0;
+}
+
+.home_profile_student div:nth-of-type(3) p {
+  font-weight: bold;
+  font-size: 16px;
+  margin-top: 60px; 
+}
+
+.home_calendar p {
+  font-size: 14px;
+  color: #333;
+  margin: 5px 0;
+}
+
+.home_calendar .card_title p {
+  font-size: 32px;
+}
+
+.home_calendar p:nth-of-type(2), .home_calendar p:nth-of-type(4) {
+  font-weight: bold;
+}
+
+.home_calendar div:nth-of-type(4) p {
+  font-weight: bold;
+  font-size: 16px;
+  margin-top: 30px; 
+}
+
