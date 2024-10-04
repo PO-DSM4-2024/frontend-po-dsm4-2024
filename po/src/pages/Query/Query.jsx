@@ -6,7 +6,7 @@ import Panel from '../../components/Panel/Panel';
 const Query = () => {
   return (
     <div className="query_container">
-      <Menu studentName={'Ana Pupo'} />
+      <Menu studentName={'Ana Clara'} />
       <div className="query_side_content">
         <Panel pageName="Painel do Aluno" section="Consultas" color="#677C91" />
         <div className="query_info">

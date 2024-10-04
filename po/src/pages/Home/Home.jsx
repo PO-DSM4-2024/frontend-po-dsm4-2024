@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <>
       <div className="home_container">
-        <Menu studentName={'Ana Pupo'} />
+        <Menu studentName={'Ana Clara'} />
         <div className="home_side_content">
           <Panel pageName="Painel do Aluno" section="Início" color="orange" />
           <div className="home_info_top">

@@ -5,7 +5,7 @@ import Panel from '../../../components/Panel/Panel';
 const Absence = () => {
   return (
     <div className="absence_container">
-      <Menu studentName={'Ana Pupo'} />
+      <Menu studentName={'Ana Clara'} />
       <div className="absence_side_content">
         <Panel pageName="Painel do Aluno" section="Consultas/Faltas" color="#677C91" />
         <div className="absence_info">
