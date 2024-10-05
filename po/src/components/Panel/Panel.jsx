@@ -1,5 +1,5 @@
 import './Panel.css';
-import Banner from '../../assets/img/banner-logo.png';
+import logos from '../../assets/images/logos/logos';
 
 const Panel = ({ pageName, section, color }) => {
   return (
@@ -8,7 +8,7 @@ const Panel = ({ pageName, section, color }) => {
         <h1>{pageName}</h1>
         <p>{section}</p>
       </div>
-      <img className='home_logo' src={Banner} alt="" />
+      <img className='home_logo' src={logos.banner} alt="" />
     </div>
   );
 };

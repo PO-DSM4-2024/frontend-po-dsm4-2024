@@ -1,13 +1,13 @@
+import './Login.css';
 import { Link } from 'react-router-dom';
 import useAuthStore from '../../store/useAuthStore';
 import { useForm } from 'react-hook-form';
 import { z } from 'zod';
 import { zodResolver } from '@hookform/resolvers/zod';
-import './Login.css';
-import Logo from '../../assets/img/logo-branca.png';
-import miniLogo from '../../assets/img/logo-azul 1.png';
-import Lock from '../../assets/img/icon-lock.png';
-import Email from '../../assets/img/icon-email.png';
+import general from '../../assets/images/general/general';
+import logos from '../../assets/images/logos/logos';
+import icons from '../../assets/images/icons/icons';
+
 
 const schema = z.object({
   email: z.string().email('Invalid Email').min(1, 'Email is required'),
@@ -35,7 +35,7 @@ const Login = () => {
   return (
     <div className="login-container">
       <div className="login-left">
-        <img src={miniLogo} alt="" id="mini-logo" />
+        <img src={logos.blueHalf} alt="" id="mini-logo" />
         <div className="login_left_title">
           <h1>Portal do Aluno</h1>
           <p>Faça o login para acessar a sua conta</p>
@@ -45,11 +45,11 @@ const Login = () => {
             {errors.email && errors.password && (
               <p style={{ color: 'red', textWrap: 'nowrap' }}>Email ou senha incorreto. Tente novamente!</p>
             )}
-            <img src={Email} alt="Email icon" />
+            <img src={icons.email} alt="Email icon" />
             <input type="text" {...register('email')} placeholder="E-mail Institucional" required />
           </div>
           <div className="input-group">
-            <img src={Lock} alt="Lock icon" />
+            <img src={icons.lock} alt="Lock icon" />
             <input type="password" {...register('password')} placeholder="Senha" required />
           </div>
 
@@ -67,9 +67,9 @@ const Login = () => {
       </div>
       <div className="login-right">
         <div className="login-logo">
-          <img src={Logo} alt="" />
+          <img src={logos.white} alt="" />
         </div>
-        <img src="src/assets/img/image.png" alt="Student" className="login-image" />
+        <img src={general.banner} alt="Student" className="login-image" />
       </div>
     </div>
   );

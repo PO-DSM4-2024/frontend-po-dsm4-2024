@@ -11,6 +11,7 @@ import no from './icons/icon-no.png';
 import quit from './icons/icon-quit.png';
 import star from './icons/icon-start.png';
 import user from './icons/icon-user.png';
+import calendar from './icons/icon-calendar.png';
 import arrowLeft from './icons/icon-arrow-left.png';
 import arrowRight from './icons/icon-arrow-right.png';
 
@@ -28,6 +29,7 @@ const icons = {
   quit,
   star,
   user,
+  calendar,
   arrowLeft,
   arrowRight
 };

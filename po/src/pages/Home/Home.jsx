@@ -1,8 +1,6 @@
 import Menu from '../../components/Menu/Menu';
 import Panel from '../../components/Panel/Panel';
-import iconUser from '../../assets/img/icons/user-icon.png';
-import iconCalendar from '../../assets/img/icons/calendar-icon.png';
-import iconArrow from '../../assets/img/icons/arrow-right.png';
+import icons from '../../assets/images/icons/icons';
 import '../Home/Home.css';
 
 const Home = () => {
@@ -15,7 +13,7 @@ const Home = () => {
         <div className="home_info_top">
           <div className="home_profile_student">
             <div className="card_title">
-              <img src={iconUser} alt="user" />
+              <img src={icons.user} alt="user" />
               <p>Perfil do aluno</p>
             </div>
             <div>
@@ -32,9 +30,9 @@ const Home = () => {
           </div>
           <div className="home_calendar">
             <div className="card_title">
-              <img src={iconCalendar} alt="calendar icon" />
+              <img src={icons.calendar} alt="calendar icon" />
               <p>Calendário</p>
-              <img src={iconArrow} alt="arrow icon" />
+              <img src={icons.arrowRight} alt="arrow icon" />
             </div>
             <div>
               <p>30/09/2024</p>
@@ -52,9 +50,9 @@ const Home = () => {
         <div className="home_info_below">
           <div className="home_section">
             <div className="card_title">
-              <img src={iconCalendar} alt="calendar icon" />
+              <img src={icons.calendar} alt="calendar icon" />
               <p>Visão Geral</p>
-              <img src={iconArrow} alt="arrow icon" />
+              <img src={icons.arrowRight} alt="arrow icon" />
             </div>
           </div>
         </div>
