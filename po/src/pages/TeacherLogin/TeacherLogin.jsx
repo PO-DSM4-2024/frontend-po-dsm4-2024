@@ -34,7 +34,7 @@ const Login = () => {
   return (
     <div className="login-container">
       <div className="login-left">
-        <img src={logos.blueHalf} alt="" id="mini-logo" />
+        <img src={logos.blueHalf.src} alt={logos.blueHalf.alt} id="mini-logo" />
         <div className="login_left_title">
           <h1>Portal do Professor</h1>
           <p>Faça o login para acessar a sua conta</p>
@@ -44,16 +44,16 @@ const Login = () => {
             {errors.email && errors.password && (
               <p style={{ color: 'red', textWrap: 'nowrap' }}>Email ou senha incorreto. Tente novamente!</p>
             )}
-            <img src={icons.email} className="icon" alt="Email icon" />
+            <img src={icons.email.src} className="icon" alt={icons.email.alt} />
             <input type="text" {...register('email')} placeholder="E-mail Institucional" required />
           </div>
           <div className="input-group">
-            <img src={icons.lock} alt="Lock icon" />
+            <img src={icons.lock.src} alt={icons.lock.alt} />
             <input type="password" {...register('password')} placeholder="Senha" required />
           </div>
 
           <div className="input-group">
-            <img src={icons.hat} alt="Hat icon" />
+            <img src={icons.hat.src} alt={icons.hat.alt} />
             <select className="select-container">
               <option value="Instituição de Ensino">Instituição de Ensino</option>
               <option value="FATEC Americana">FATEC Americana</option>
@@ -88,9 +88,9 @@ const Login = () => {
       </div>
       <div className="login-right">
         <div className="login-logo">
-          <img src={logos.white} alt="" />
+          <img src={logos.white.src} alt={logos.white.alt} />
         </div>
-        <img src={general.banner} alt="Student" className="login-image" />
+        <img src={general.banner.src} alt={general.banner.alt} className="login-image" />
       </div>
     </div>
   );

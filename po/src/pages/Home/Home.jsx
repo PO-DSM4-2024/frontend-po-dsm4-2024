@@ -13,7 +13,7 @@ const Home = () => {
         <div className="home_info_top">
           <div className="home_profile_student">
             <div className="card_title">
-              <img src={icons.user} alt="user" />
+              <img src={icons.user.src} alt={icons.user.alt} />
               <p>Perfil do aluno</p>
             </div>
             <div>
@@ -30,9 +30,9 @@ const Home = () => {
           </div>
           <div className="home_calendar">
             <div className="card_title">
-              <img src={icons.calendar} alt="calendar icon" />
+              <img src={icons.calendar.src} alt={icons.calendar.alt} />
               <p>Calendário</p>
-              <img src={icons.arrowRight} alt="arrow icon" />
+              <img src={icons.arrowRight.src} alt={icons.arrowRight.alt} />
             </div>
             <div>
               <p>30/09/2024</p>
@@ -50,9 +50,9 @@ const Home = () => {
         <div className="home_info_below">
           <div className="home_section">
             <div className="card_title">
-              <img src={icons.calendar} alt="calendar icon" />
+              <img src={icons.calendar.src} alt={icons.calendar.alt} />
               <p>Visão Geral</p>
-              <img src={icons.arrowRight} alt="arrow icon" />
+              <img src={icons.arrowRight.src} alt={icons.arrowRight.alt} />
             </div>
           </div>
         </div>
