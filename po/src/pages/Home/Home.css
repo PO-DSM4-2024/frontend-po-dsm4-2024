@@ -76,7 +76,7 @@ body {
   height: auto;  
 }
 
-.card_title {
+div.card_title  {
   display: flex;
   flex-direction: row; 
   justify-content: flex-start;

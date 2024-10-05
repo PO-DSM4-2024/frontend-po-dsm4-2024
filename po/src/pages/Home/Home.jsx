@@ -20,7 +20,7 @@ const Home = () => {
             </div>
             <div>
               <div className="student_info">
-                <p>Ana luíza de Lara Pupo</p>
+                <p>Ana Clara</p>
                 <p>4º sem</p>
               </div>
               <p>000000000000000</p>
