@@ -5,11 +5,26 @@ import white from './logo-white.png'
 import banner from './logo-banner.png'
 
 const logos = {
-    bege,
-    blueHalf,
-    blue,
-    white,
-    banner
+    bege: {
+        src: bege,
+        alt: 'bege praxis logo'
+    },
+    blueHalf: {
+        src: blueHalf,
+        alt: 'little blue praxis logo'
+    },
+    blue: {
+        src: blue,
+        alt: 'blue praxis logo'
+    },
+    white: {
+        src: white,
+        alt: 'white praxis logo'
+    },
+    banner: {
+        src: banner,
+        alt: 'banner praxis logo'
+    }
 }
 
 export default logos
