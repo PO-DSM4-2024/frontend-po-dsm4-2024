@@ -11,41 +11,60 @@
 
 body {
   font-family: 'Nunito', sans-serif;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  background-color: #f2f2f2;
 }
 
 .home_container {
   width: 100vw;
   background-color: #f2f2f2;
-  display: flex;
 }
 
-.home_side_content {
+.home_side_contents {
   top: 0;
   width: 81%;
-  height: 1000px;
+  height: 100%;
   background-color: #f2f2f2;
   margin-left: 19.1%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .home_info_top {
+  width: 90%;
+  height: 50%;
   display: flex;
   justify-content: space-between;
-  gap: 30px;
+  gap: 10%;
   margin: 30px;
+}
+
+.home_info {
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+  flex-direction: column;
+  display: flex;
 }
 
 .home_info_below {
   margin: 30px;
+  width: 90%;
+  height: 40%;
 }
 
-.home_info_below .home_section {
+.home_info_below {
   background-color: #ffffff;
   padding: 20px;
   border-radius: 7px;
   box-shadow: 0 0px 8px #0000001a;
-  width: 100%;  
-  height: 349px; 
-  margin-top: 70px; 
+  width: 90%;  
+  height: 349px;  
+  margin-bottom: 2%;
 }
 
 .home_profile_student, .home_calendar {
@@ -53,7 +72,7 @@ body {
   padding: 20px;
   border-radius: 7px;
   box-shadow: 0 0px 8px #0000001a;
-  width: 552px;  
+  width: 90%;  
   height: auto;  
 }
 
@@ -64,6 +83,12 @@ body {
   align-items: center;
   gap: 5px; 
   margin-bottom: 16px;
+  color: 'black';
+}
+
+.card_title > div {
+  color: 'black';
+  background-color: #333;
 }
 
 .home_profile_student .student_info {
@@ -111,3 +136,6 @@ body {
   margin-top: 30px; 
 }
 
+.home_section {
+
+}

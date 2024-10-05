@@ -9,8 +9,9 @@ const Home = () => {
   return (
     <div className="home_container">
       <Menu studentName={'Ana Clara'} />
-      <div className="home_side_content">
+      <div className="home_side_contents">
         <Panel pageName="Painel do Aluno" section="Início" color="#F66B0E" />
+        <div className="home_info">
         <div className="home_info_top">
           <div className="home_profile_student">
             <div className="card_title">
@@ -56,6 +57,7 @@ const Home = () => {
               <img src={iconArrow} alt="arrow icon" />
             </div>
           </div>
+        </div>
         </div>
       </div>
     </div>
