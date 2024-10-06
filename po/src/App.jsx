@@ -4,6 +4,7 @@ import Login from './pages/Login/Login';
 import Query from './pages/Query/Query';
 import TeacherLogin from './pages/TeacherLogin/TeacherLogin';
 import Absence from './pages/Query/Absence/Absence';
+import RollCall from './pages/RollCall/RollCall';
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
         <Route path="/query" element={<Query />} />
         <Route path="/teacherLogin" element={<TeacherLogin />} />
         <Route path="/query/absence" element={<Absence />} />
+        <Route path="/rollcall" element={<RollCall />} />
       </Routes>
     </BrowserRouter>
   );
