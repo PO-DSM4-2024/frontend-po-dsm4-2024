@@ -14,6 +14,8 @@ import user from './icon-user.png';
 import calendar from './icon-calendar.png';
 import arrowLeft from './icon-arrow-left.png';
 import arrowRight from './icon-arrow-right.png';
+import students from './students.png';
+import notas from './notas.png';
 
 const icons = {
   book: {
@@ -27,6 +29,10 @@ const icons = {
   danger: {
     src: danger,
     alt: 'icon danger'
+  },
+  notas: {
+    src: notas,
+    alt: 'notas icon'
   },
   email: {
     src: email,
@@ -63,6 +69,10 @@ const icons = {
   star: {
     src: star,
     alt: 'star icon'
+  },
+  students: {
+    src: students,
+    alt: 'students icon'
   },
   user: {
     src: user,
