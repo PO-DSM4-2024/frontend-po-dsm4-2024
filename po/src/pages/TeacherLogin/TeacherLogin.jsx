@@ -45,11 +45,11 @@ const TeacherLogin = () => {
               <p style={{ color: 'red', textWrap: 'nowrap' }}>Email ou senha incorreto. Tente novamente!</p>
             )}
             <img src={icons.email.src} className="icon" alt={icons.email.alt} />
-            <input type="text" {...register('email')} placeholder="E-mail Institucional" required />
+            <input type="text" {...register('email')} className='input-teacher' placeholder="E-mail Institucional" required />
           </div>
           <div className="input-group">
             <img src={icons.lock.src} alt={icons.lock.alt} />
-            <input type="password" {...register('password')} placeholder="Senha" required />
+            <input type="password" {...register('password')} className='input-teacher' placeholder="Senha" required />
           </div>
 
           <div className="input-group">

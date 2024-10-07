@@ -8,7 +8,6 @@ import general from '../../assets/images/general/general';
 import logos from '../../assets/images/logos/logos';
 import icons from '../../assets/images/icons/icons';
 
-
 const schema = z.object({
   email: z.string().email('Invalid Email').min(1, 'Email is required'),
   password: z.string().min(6, 'Password must be at least 6 characters long'),
@@ -45,12 +44,12 @@ const Login = () => {
             {errors.email && errors.password && (
               <p style={{ color: 'red', textWrap: 'nowrap' }}>Email ou senha incorreto. Tente novamente!</p>
             )}
-            <img src={icons.email.src} alt={icons.email.alt} />
-            <input type="text" {...register('email')} placeholder="E-mail Institucional" required />
+            <img src={errors.email ? icons.emailRed.src : icons.email.src} alt={icons.email.alt} className='img-inputs' />
+            <input type="text" {...register('email')} className={errors.email ? 'input-error' : 'input-form-student'} placeholder="E-mail Institucional" required />
           </div>
           <div className="input-group">
-            <img src={icons.lock.src} alt={icons.lock.alt} />
-            <input type="password" {...register('password')} placeholder="Senha" required />
+            <img src={errors.password ? icons.lockRed.src : icons.lock.src} className='img-inputs'/>
+            <input type="password" {...register('password')} className={errors.password ? 'input-error' : 'input-form-student'} placeholder="Senha" required />
           </div>
 
           <button type="submit" className="login-button">

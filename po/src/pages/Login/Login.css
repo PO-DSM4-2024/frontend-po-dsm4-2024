@@ -57,12 +57,23 @@
   width: 50%;
 }
 
-form {
-  width: 100%;
-  height: 32%;
+.input-error {
+  width: 107%;
+  font-family: nunito;
+  padding: 13px 59px;
+  font-size: 1.3rem;
+  border: 2px solid red;
+  border-radius: 10px;
+  background-color: #ffffff;
+  color: #2c3e50;
 }
 
-.input-group input {
+form {
+  width: 100%;
+  height: 34%;
+}
+
+.input-form-student {
   width: 107%;
   font-family: nunito;
   padding: 13px 59px;
@@ -73,7 +84,7 @@ form {
   color: #2c3e50;
 }
 
-.input-group img {
+.img-inputs {
   position: absolute;
   margin-top: 7.7px;
   margin-left: 10px;

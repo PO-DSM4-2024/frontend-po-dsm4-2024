@@ -2,11 +2,13 @@ import book from './icon-book.png';
 import clock from './icon-clock.png';
 import danger from './icon-danger.png';
 import email from './icon-email.png';
+import emailRed from './icon-email-red.png';
 import error from './icon-error.png';
 import gear from './icon-gear.png';
 import hat from './icon-hat.png';
 import history from './icon-history.png';
 import lock from './icon-lock.png';
+import lockRed from './icon-lock-red.png'
 import x from './icon-x.png';
 import quit from './icon-quit.png';
 import star from './icon-star.png';
@@ -38,6 +40,10 @@ const icons = {
     src: email,
     alt: 'email icon'
   },
+  emailRed: {
+    src: emailRed,
+    alt: 'red email icon'
+  },
   error: {
     src: error,
     alt: 'error icon'
@@ -57,6 +63,10 @@ const icons = {
   lock: {
     src: lock,
     alt: 'lock icon'
+  },
+  lockRed: {
+    src: lockRed,
+    alt: 'red lock icon'
   },
   x: {
     src: x,
