@@ -1,4 +1,4 @@
-import './Menu.css';
+import './TeacherMenu.css';
 import icons from '../../assets/images/icons/icons';
 import logos from '../../assets/images/logos/logos';
 

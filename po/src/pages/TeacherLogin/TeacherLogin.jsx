@@ -13,7 +13,7 @@ const schema = z.object({
   password: z.string().min(6, 'Password must be at least 6 characters long'),
 });
 
-const Login = () => {
+const TeacherLogin = () => {
   const login = useAuthStore((state) => state.login);
   const error = useAuthStore((state) => state.error);
 
@@ -96,4 +96,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default TeacherLogin;
