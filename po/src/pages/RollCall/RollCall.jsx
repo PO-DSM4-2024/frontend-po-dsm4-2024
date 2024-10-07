@@ -1,10 +1,8 @@
 import './RollCall.css';
-import { Link } from 'react-router-dom';
-import Menu from '../../components/Menu1/Menu';
+import Menu from '../../components/TeacherMenu/TeacherMenu';
 import Panel from '../../components/Panel/Panel';
 import icons from '../../assets/images/icons/icons';
-import general from '../../assets/images/general/general';
-import logos from '../../assets/images/logos/logos';
+
 
 
 const RollCall = () => {

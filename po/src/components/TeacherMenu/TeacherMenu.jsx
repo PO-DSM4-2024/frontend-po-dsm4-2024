@@ -1,7 +1,7 @@
 import './Menu.css';
 import icons from '../../assets/images/icons/icons';
 import logos from '../../assets/images/logos/logos';
-import { Link } from 'react-router-dom';
+
 
 const Menu = ({ studentName }) => {
   return (
