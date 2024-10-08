@@ -1,6 +1,6 @@
 import './Absence.css';
-import Menu from '../../../components/Menu/Menu';
-import Panel from '../../../components/Panel/Panel';
+import Menu from '../../../../components/Student/Menu/Menu';
+import Panel from '../../../../components/Panel/Panel';
 
 const Absence = () => {
   return (

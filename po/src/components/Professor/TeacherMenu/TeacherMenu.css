@@ -1,6 +1,6 @@
 @font-face {
   font-family: nunito;
-  src: url('../../assets/fonts/Nunito-Regular.ttf');
+  src: url('../../../assets/fonts/Nunito-Regular.ttf');
 }
 
 .menu_container {
@@ -30,6 +30,10 @@
   gap: 6%;
   font-size: 1.4rem;
   padding-top: 20px;
+}
+
+.menu_user_info h4{
+  margin-top: -10px;
 }
 
 #user-image {
@@ -135,8 +139,13 @@
 }
 
 .consult_itens > img {
-  width: 20px;
-  height: 20px;
+  width: 24px;
+  height: 22px;
+}
+
+h6{
+  margin-bottom: -40px;
+  margin-left: -90px;
 }
 
 .registry_itens > img {
@@ -183,7 +192,7 @@
 }
 
 #string2 {
-  margin-top: 5%;
+  margin-top: 65%;
   width: 100%;
   height: 0.1px;
   background-color: #f4bd50;

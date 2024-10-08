@@ -1,7 +1,7 @@
 import './RollCall.css';
-import Menu from '../../components/TeacherMenu/TeacherMenu';
-import Panel from '../../components/Panel/Panel';
-import icons from '../../assets/images/icons/icons';
+import Menu from '../../../components/Professor/TeacherMenu/TeacherMenu';
+import Panel from '../../../components/Panel/Panel';
+import icons from '../../../assets/images/icons/icons';
 
 
 

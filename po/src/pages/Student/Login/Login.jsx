@@ -1,12 +1,12 @@
 import './Login.css';
 import { Link } from 'react-router-dom';
-import useAuthStore from '../../store/useAuthStore';
+import useAuthStore from '../../../store/useAuthStore';
 import { useForm } from 'react-hook-form';
 import { z } from 'zod';
 import { zodResolver } from '@hookform/resolvers/zod';
-import general from '../../assets/images/general/general';
-import logos from '../../assets/images/logos/logos';
-import icons from '../../assets/images/icons/icons';
+import general from '../../../assets/images/general/general';
+import logos from '../../../assets/images/logos/logos';
+import icons from '../../../assets/images/icons/icons';
 
 const schema = z.object({
   email: z.string().email('Invalid Email').min(1, 'Email is required'),
@@ -58,7 +58,7 @@ const Login = () => {
 
           {error && <p style={{ color: 'red' }}>{error}</p>}
           <div className="login_left_bottom">
-            <Link className="forgot-link" to={'/teacherLogin'}>
+            <Link className="forgot-link" to={'/professor/teacherLogin'}>
               Sou funcionário
             </Link>
           </div>

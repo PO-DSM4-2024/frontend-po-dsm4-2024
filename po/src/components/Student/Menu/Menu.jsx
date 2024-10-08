@@ -1,6 +1,6 @@
 import './Menu.css';
-import icons from '../../assets/images/icons/icons';
-import logos from '../../assets/images/logos/logos';
+import icons from '../../../assets/images/icons/icons';
+import logos from '../../../assets/images/logos/logos';
 import { Link } from 'react-router-dom';
 
 const Menu = ({ studentName }) => {
@@ -10,18 +10,18 @@ const Menu = ({ studentName }) => {
         <img src={logos.white.src} id="white-logo" alt={logos.white.alt} />
       </div>
       <div className="menu_user_info">
-        <div id="user-image"></div>
+        <div id="user-image-menu"></div>
         <p>{studentName}</p>
       </div>
       <div className="menu_consult">
         <div className="consult_title">
-        <Link id="title" to={'/query'}><p>Consultas</p></Link>
+        <Link id="title" to={'/student/query'}><p>Consultas</p></Link>
           <div id="string"></div>
         </div>
         <div className="consult_actions">
           <div className="consult_itens">
             <img src={icons.x.src} alt={icons.x.alt} />
-            <Link id="itens" to={'/query/absence'}><p>Faltas</p></Link>
+            <Link id="itens" to={'/student/query/absence'}><p>Faltas</p></Link>
           </div>
           <div className="consult_itens">
             <img src={icons.star.src} alt={icons.star.alt} />

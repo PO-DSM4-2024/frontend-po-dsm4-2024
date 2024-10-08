@@ -1,7 +1,7 @@
-import Menu from '../../components/Menu/Menu';
-import Panel from '../../components/Panel/Panel';
-import icons from '../../assets/images/icons/icons';
-import '../Home/Home.css';
+import Menu from '../../../components/Student/Menu/Menu';
+import Panel from '../../../components/Panel/Panel';
+import icons from '../../../assets/images/icons/icons';
+import './Home.css';
 
 const Home = () => {
   return (

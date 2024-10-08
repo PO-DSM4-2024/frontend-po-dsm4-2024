@@ -1,7 +1,7 @@
 import './Query.css';
-import Menu from '../../components/Menu/Menu';
-import icons from '../../assets/images/icons/icons';
-import Panel from '../../components/Panel/Panel';
+import Menu from '../../../components/Student/Menu/Menu';
+import icons from '../../../assets/images/icons/icons';
+import Panel from '../../../components/Panel/Panel';
 
 const Query = () => {
   return (
