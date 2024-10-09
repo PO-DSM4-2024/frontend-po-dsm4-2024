@@ -52,13 +52,13 @@ const Login = () => {
             <input type="password" {...register('password')} className={errors.password ? 'input-error' : 'input-form-student'} placeholder="Senha" required />
           </div>
 
-          <button type="submit" className="login-button">
+          <button type="submit" className="login-button-student">
             Entrar
           </button>
 
           {error && <p style={{ color: 'red' }}>{error}</p>}
           <div className="login_left_bottom">
-            <Link className="forgot-link" to={'/professor/teacherLogin'}>
+            <Link className="forgot-link-student" to={'/professor/teacherLogin'}>
               Sou funcionário
             </Link>
           </div>

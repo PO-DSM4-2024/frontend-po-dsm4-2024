@@ -90,7 +90,7 @@ form {
   margin-left: 10px;
 }
 
-.login-button {
+.login-button-student {
   margin-top: 70px;
   background-color: #ff6600;
   color: white;
@@ -105,10 +105,9 @@ form {
   background-color: #e65c00;
 }
 
-.forgot-link {
+.forgot-link-student {
   text-decoration: underline;
-  margin-top: 2px;
-  margin-left: 18%;
+  margin-left: 17%;
   font-size: 1.2rem;
   color: #3c5874;
   text-decoration: none;
