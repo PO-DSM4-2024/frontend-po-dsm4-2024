@@ -1,12 +1,12 @@
 import './Query.css';
-import Menu from '../../../components/Student/Menu/Menu';
+import { StudentMenu } from '../../../components/Student';
 import icons from '../../../assets/images/icons/icons';
 import Panel from '../../../components/Panel/Panel';
 
 const Query = () => {
   return (
     <div className="query_container">
-      <Menu studentName={'Ana Clara'} />
+      <StudentMenu studentName={'Ana Clara'} />
       <div className="query_side_content">
         <Panel pageName="Painel do Aluno" section="Consultas" color="#677C91" />
         <div className="query_info">
