@@ -38,53 +38,45 @@ const Absence = () => {
                   <h2>18 aulas</h2>
                   <h2>2 faltas</h2>
                 </div>
-              </div>
 
-              <hr />
+                <hr />
 
-              <div className="absence_card_table_body">
                 <div className="absence_body">
                   <h2>Nome da materia</h2>
                   <h2>Sigla</h2>
                   <h2>18 aulas</h2>
                   <h2>2 faltas</h2>
                 </div>
-              </div>
 
-              <hr />
+                <hr />
 
-              <div className="absence_card_table_body">
                 <div className="absence_body">
                   <h2>Nome da materia</h2>
                   <h2>Sigla</h2>
                   <h2>18 aulas</h2>
                   <h2>2 faltas</h2>
                 </div>
-              </div>
 
-              <hr />
+                <hr />
 
-              <div className="absence_card_table_body">
                 <div className="absence_body">
                   <h2>Nome da materia</h2>
                   <h2>Sigla</h2>
                   <h2>18 aulas</h2>
                   <h2>2 faltas</h2>
                 </div>
-              </div>
 
-              <hr />
+                <hr />
 
-              <div className="absence_card_table_body">
                 <div className="absence_body">
                   <h2>Nome da materia</h2>
                   <h2>Sigla</h2>
                   <h2>18 aulas</h2>
                   <h2>2 faltas</h2>
                 </div>
-              </div>
 
-              <hr />
+                <hr />
+              </div>
             </div>
           </div>
         </div>
