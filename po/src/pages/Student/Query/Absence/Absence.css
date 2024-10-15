@@ -50,20 +50,20 @@ body {
   border-radius: 5px;
 }
 
-.card_title {
+.absence_card_title {
   display: flex;
   align-items: start;
   flex-direction: column;
 }
 
-.card_title p {
+.absence_card_title p {
   font-size: 32px;
   font-weight: 500;
   color: #2c3e50;
   margin: 20px 0px 20px 40px;
 }
 
-.card_title hr {
+.absence_card_title hr {
   background-color: #f2f2f2;
   width: 200px;
   height: 4px;
@@ -75,20 +75,23 @@ body {
   border-bottom-right-radius: 10px;
 }
 
-.card_subject {
-  margin: 36px 0px 36px 40px;
+.absence_card_subject {
+  margin: 36px 40px 36px 40px;
   display: flex;
   align-items: center;
+
   column-gap: 10px;
 }
 
-.card_subject label {
+.absence_card_subject span {
   font-size: 22px;
   font-weight: 300;
   color: #000;
+
+  display: inline-block;
 }
 
-.card_subject select {
+.absence_card_subject select {
   font-size: 18px;
   font-weight: 300;
   color: #3f3f3f;
@@ -98,20 +101,46 @@ body {
   outline: none;
   border-radius: 10px;
 
-  padding: 7px 15px 7px 15px;
+  width: 300px;
+  padding: 5px 10px 5px 10px;
 }
 
-.card_table {
-  margin: 0px 40px 36px 40px;
-  border-collapse: collapse;
-  width: 93%;
+.absence_card_table {
+  width: 100%;
+  padding: 20px 40px 40px 40px;
 }
 
-.card_table table {
+.absence_card_table_header {
   width: 100%;
 }
 
-.card_table th {
+.absence_card_table_body {
+  width: 100%;
+
+  margin: 20px 0px -2px 0px;
+}
+
+.absence_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.absence_header_acronym {
+  margin-left: 120px;
+}
+
+.absence_header_total_classes {
+  margin-right: -30px;
+}
+
+.absence_body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.absence_header h1 {
   font-size: 24px;
   color: #233058;
   font-weight: bold;
@@ -119,7 +148,7 @@ body {
   line-height: 4rem;
 }
 
-.card_table td {
+.absence_body h2 {
   font-size: 24px;
   color: #3f3f3f;
   font-weight: bold;
@@ -127,6 +156,15 @@ body {
   line-height: 4rem;
 }
 
-.card_table td {
-  border-bottom: 2px solid #677c91;
+.absence_card_table hr {
+  border: none;
+  outline: none;
+
+  height: 2px;
+  background-color: #677c91;
+
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
