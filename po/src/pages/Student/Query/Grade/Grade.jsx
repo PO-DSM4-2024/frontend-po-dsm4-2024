@@ -1,4 +1,4 @@
-import './Grades.css';
+import './Grade.css';
 import { StudentMenu } from '../../../../components/Student';
 import icons from '../../../../assets/images/icons/icons';
 import Panel from '../../../../components/Panel/Panel';

@@ -6,7 +6,7 @@ import TeacherLogin from './pages/Professor/TeacherLogin/TeacherLogin';
 import Absence from './pages/Student/Query/Absence/Absence';
 import RollCall from './pages/Professor/RollCall/RollCall';
 import Students from './pages/Professor/Studants/Students';
-import Grades from './pages/Student/Query/Grades/Grades';
+import Grade from './pages/Student/Query/Grade/Grade';
 import Class from './pages/Student/Query/Class/Class';
 
 const App = () => {
@@ -20,7 +20,7 @@ const App = () => {
         <Route path="/student/query/absence" element={<Absence />} />
         <Route path="/professor/rollcall" element={<RollCall />} />
         <Route path="/professor/students" element={<Students />} />
-        <Route path="/student/query/grades" element={<Grades />} />
+        <Route path="/student/query/grade" element={<Grade />} />
         <Route path="/student/query/class" element={<Class />} />
       </Routes>
     </BrowserRouter>
