@@ -1,17 +1,17 @@
 import useAuthStore from '../../../store/useAuthStore.js'; 
-import './Students.css';
+import styles from './Students.module.css';
 
 const Students = () => {
   const { students } = useAuthStore();
 
   return (
-    <div className="students-container">
-      <aside className="sidebar">
-        <div className="profile">
+    <div className={styles.studentsContainer}>
+      <aside className={styles.sidebar}>
+        <div className={styles.profile}>
           <img src="user_image_url" alt="Profile" />
           <p>Nome dado:</p>
         </div>
-        <nav className="menu">
+        <nav className={styles.menu}>
           <ul>
             <li>Alunos</li>
             <li>Notas</li>
@@ -20,16 +20,16 @@ const Students = () => {
             <li>Calendário</li>
           </ul>
         </nav>
-        <div className="settings">
+        <div className={styles.settings}>
           <p>Configurações</p>
           <p>Sair</p>
         </div>
       </aside>
 
-      <main className="main-content">
-        <header className="header">
+      <main className={styles.mainContent}>
+        <header className={styles.header}>
           <h1>Portal do Professor</h1>
-          <div className="filters">
+          <div className={styles.filters}>
             <div>
               <label>Turma:</label>
               <select>
@@ -43,13 +43,13 @@ const Students = () => {
               </select>
             </div>
           </div>
-          <div className="actions">
+          <div className={styles.actions}>
             <input type="text" placeholder="Pesquisar aluno" />
             <button>Chamada</button>
           </div>
         </header>
 
-        <section className="student-list">
+        <section className={styles.studentList}>
           <table>
             <thead>
               <tr>
@@ -64,7 +64,7 @@ const Students = () => {
                   <td>{student.name}</td>
                   <td>{student.status}</td>
                   <td>
-                    <div className={`progress ${student.status === 'Ativo' ? 'active' : 'inactive'}`} style={{ width: student.frequency }}></div>
+                    <div className={`${styles.progress} ${student.status === 'Ativo' ? styles.active : styles.inactive}`} style={{ width: student.frequency }}></div>
                   </td>
                 </tr>
               ))}

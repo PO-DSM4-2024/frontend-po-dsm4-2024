@@ -1,4 +1,4 @@
-import './TeacherLogin.css';
+import styles from './TeacherLogin.module.css';
 import { Link } from 'react-router-dom';
 import useAuthStore from '../../../store/useAuthStore';
 import { useForm } from 'react-hook-form';
@@ -29,32 +29,30 @@ const TeacherLogin = () => {
     login(data.email, data.password);
   };
 
-  console.log('errors', errors);
-
   return (
-    <div className="login-container">
-      <div className="login-left">
-        <img src={logos.blueHalf.src} alt={logos.blueHalf.alt} id="mini-logo" />
-        <div className="login_left_title">
+    <div className={styles.loginContainer}>
+      <div className={styles.loginLeft}>
+        <img src={logos.blueHalf.src} alt={logos.blueHalf.alt} id={styles.miniLogo} />
+        <div className={styles.loginLeftTitle}>
           <h1>Portal do Professor</h1>
           <p>Faça o login para acessar a sua conta</p>
         </div>
         <form onSubmit={handleSubmit(onSubmit)}>
-          <div className="input-group">
+          <div className={styles.inputGroup}>
             {errors.email && errors.password && (
-              <p style={{ color: 'red', textWrap: 'nowrap' }}>Email ou senha incorreto. Tente novamente!</p>
+              <p style={{ color: 'red', whiteSpace: 'nowrap' }}>Email ou senha incorreto. Tente novamente!</p>
             )}
-            <img src={icons.email.src} className="icon" alt={icons.email.alt} />
-            <input type="text" {...register('email')} className='input-teacher' placeholder="E-mail Institucional" required />
+            <img src={icons.email.src} className={styles.icon} alt={icons.email.alt} />
+            <input type="text" {...register('email')} className={styles.inputTeacher} placeholder="E-mail Institucional" required />
           </div>
-          <div className="input-group">
+          <div className={styles.inputGroup}>
             <img src={icons.lock.src} alt={icons.lock.alt} />
-            <input type="password" {...register('password')} className='input-teacher' placeholder="Senha" required />
+            <input type="password" {...register('password')} className={styles.inputTeacher} placeholder="Senha" required />
           </div>
 
-          <div className="input-group">
+          <div className={styles.inputGroup}>
             <img src={icons.hat.src} alt={icons.hat.alt} />
-            <select className="select-container">
+            <select className={styles.selectContainer}>
               <option value="Instituição de Ensino">Instituição de Ensino</option>
               <option value="FATEC Americana">FATEC Americana</option>
               <option value="FATEC Araçatuba">FATEC Araçatuba</option>
@@ -74,23 +72,23 @@ const TeacherLogin = () => {
             </select>
           </div>
 
-          <button type="submit" className="login-button">
+          <button type="submit" className={styles.loginButton}>
             Entrar
           </button>
 
           {error && <p style={{ color: 'red' }}>{error}</p>}
-          <div className="login_left_bottom">
-            <Link className="forgot-link" to={'/'}>
+          <div className={styles.loginLeftBottom}>
+            <Link className={styles.forgotLink} to={'/'}>
               Sou Aluno
             </Link>
           </div>
         </form>
       </div>
-      <div className="login-right">
-        <div className="login-logo">
+      <div className={styles.loginRight}>
+        <div className={styles.loginLogo}>
           <img src={logos.white.src} alt={logos.white.alt} />
         </div>
-        <img src={general.banner.src} alt={general.banner.alt} className="login-image" />
+        <img src={general.banner.src} alt={general.banner.alt} className={styles.loginImage} />
       </div>
     </div>
   );

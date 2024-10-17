@@ -1,19 +1,19 @@
 @font-face {
-  font-family: nunito;
-  src: url('../../../assets/fonts/Nunito-Regular.ttf');
+  font-family: 'Nunito';
+  src: url('../../../assets/fonts/Nunito-Regular.ttf') format('truetype');
 }
 
-.menu_container {
+.menuContainer {
   color: white;
   top: 0;
   height: 100%;
   width: 20%;
   background-color: #3c5874;
-  font-family: nunito;
+  font-family: 'Nunito', sans-serif; /* Use aspas */
   position: fixed;
 }
 
-.menu_logo {
+.menuLogo {
   width: 100%;
   height: 10%;
   display: flex;
@@ -21,7 +21,7 @@
   padding-left: 10%;
 }
 
-.menu_user_info {
+.menuUserInfo {
   width: 100%;
   height: 14%;
   display: flex;
@@ -32,11 +32,11 @@
   padding-top: 20px;
 }
 
-.menu_user_info h4{
+.menuUserInfo h4 {
   margin-top: -10px;
 }
 
-#user-image {
+.userImage {
   width: 70px;
   height: 70px;
   border-radius: 50%;
@@ -45,7 +45,7 @@
   background-size: cover;
 }
 
-.menu_consult {
+.menuConsult {
   margin-top: 5%;
   width: 100%;
   height: 30%;
@@ -54,7 +54,7 @@
   padding-left: 8%;
 }
 
-.menu_registration {
+.menuRegistration {
   width: 100%;
   height: 20%;
   display: flex;
@@ -62,7 +62,7 @@
   padding-left: 8%;
 }
 
-.consult_title {
+.consultTitle {
   width: 100%;
   height: 20%;
   display: flex;
@@ -72,12 +72,12 @@
   font-size: 1.4rem;
 }
 
-#title{
+.title {
   font-size: 1.4rem;
   color: white;
 }
 
-.registry_title {
+.registryTitle {
   width: 100%;
   height: 20%;
   display: flex;
@@ -87,15 +87,12 @@
   font-size: 1.4rem;
 }
 
-.consult_actions > div {
+.consultActions > div,
+.registryActions > div {
   display: flex;
 }
 
-.registry_actions > div {
-  display: flex;
-}
-
-.consult_itens {
+.consultItems {
   width: 100%;
   display: flex;
   justify-content: flex-start;
@@ -105,12 +102,12 @@
   font-size: 1.2rem;
 }
 
-#itens{
+.items {
   font-size: 1.2rem;
   color: white;
 }
 
-.registry_itens {
+.registryItems {
   width: 100%;
   display: flex;
   justify-content: flex-start;
@@ -120,7 +117,7 @@
   font-size: 1.2rem;
 }
 
-.consult_actions {
+.consultActions {
   margin-top: 4%;
   width: 100%;
   height: 60%;
@@ -129,7 +126,7 @@
   gap: 14px;
 }
 
-.registry_actions {
+.registryActions {
   margin-top: 8%;
   width: 100%;
   height: 60%;
@@ -138,67 +135,66 @@
   gap: 20px;
 }
 
-.consult_itens > img {
+.consultItems > img {
   width: 24px;
   height: 22px;
 }
 
-h6{
+h6 {
   margin-bottom: -40px;
   margin-left: -90px;
 }
 
-.registry_itens > img {
+.registryItems > img {
   width: 20px;
   height: 20px;
 }
 
-.menu_actions > img {
+.menuActions > img {
   width: 20px;
   height: 20px;
 }
 
-.menu_actions {
+.menuActions {
   width: 100%;
   height: 10%;
   display: flex;
   flex-direction: column;
   padding-left: 8%;
   margin-top: 5%;
-  font-size: 14px;
   font-size: 1.2rem;
 }
 
-.menu_actions_img {
+.menuActionsImg {
   display: flex;
   height: 40px;
   align-items: center;
   gap: 10px;
 }
 
-.menu_actions_img > img {
+.menuActionsImg > img {
   width: 20px;
   height: 20px;
 }
 
-.menu_actions > div {
+.menuActions > div {
   display: flex;
 }
 
-#string {
+.string {
   width: 40%;
   height: 0.5px;
   background-color: #f4bd50;
 }
 
-#string2 {
+.string2 {
   margin-top: 65%;
   width: 100%;
   height: 0.1px;
   background-color: #f4bd50;
 }
 
-#white-logo {
+.whiteLogo {
   width: 100px;
   height: 20px;
 }

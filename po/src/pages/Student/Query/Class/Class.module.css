@@ -15,7 +15,7 @@ body {
   overflow-x: hidden;
 }
 
-.grades_container {
+.classesContainer {
   top: 0;
   width: 100vw;
   background-color: #f2f2f2;
@@ -23,7 +23,7 @@ body {
   font-family: nunito;
 }
 
-.grades_side_content {
+.classesSideContent {
   position: absolute;
   right: 0;
   top: 0;
@@ -33,7 +33,7 @@ body {
   margin-left: 19.1%;
 }
 
-.grades_info {
+.classesInfo {
   width: 100%;
   display: flex;
   align-items: center;
@@ -41,100 +41,90 @@ body {
   flex-direction: column;
 }
 
-.grades_card {
+.classesCard {
   width: 95%;
   background-color: white;
-
   margin-top: 52px;
   margin-bottom: 52px;
   border-radius: 5px;
 }
 
-.grades_card_title {
+.classesCardTitle {
   display: flex;
   align-items: start;
   flex-direction: column;
 }
 
-.grades_card_title p {
+.classesCardTitle p {
   font-size: 32px;
   font-weight: 500;
   color: #2c3e50;
   margin: 20px 0px 20px 40px;
 }
 
-.grades_card_title hr {
+.classesCardTitle hr {
   background-color: #f2f2f2;
   width: 200px;
   height: 4px;
-
   outline: none;
   border: none;
-
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
 }
 
-.grades_card_table {
+.classesCardTable {
   width: 100%;
   padding: 20px 40px 40px 40px;
 }
 
-.grades_card_table_header {
+.classesCardTableHeader {
   width: 100%;
-
   margin-bottom: 40px;
 }
 
-.grades_header {
+.classesHeader {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.grades_header span {
+.classesHeader span {
   font-size: 24px;
   color: #233058;
   font-weight: bold;
 }
 
-.grades_card_table_body {
+.classesCardTableBody {
   width: 100%;
-
   margin: 20px 0px -2px 0px;
 }
 
-.grades_body {
-  display: flex;
-  flex-direction: column;
-
-  gap: 85px;
+.classesBody {
+  width: 100%;
 }
 
-.grades_dropdown_body {
-  font-size: 18px;
-  font-weight: 300;
-  color: #3f3f3f;
-  background-color: #f2f2f2;
-
-  border: none;
-  outline: none;
-  border-radius: 10px;
-
-  width: 100%;
-  padding: 5px 15px 5px 15px;
-
+.classesWeekdayBody {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 40px;
 }
 
-.grades_dropdown_body img {
-  height: 10px;
+.classesDay {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
-.grades_dropdown_body span {
-  font-size: 24px;
+.classesDay span {
+  font-size: 28px;
+  color: #3f3f3f;
+  font-weight: bold;
+}
+
+.classesDay p {
+  font-size: 20px;
   color: #3f3f3f;
   font-weight: bold;
 }

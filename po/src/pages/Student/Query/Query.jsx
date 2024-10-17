@@ -1,51 +1,51 @@
-import './Query.css';
+import styles from './Query.module.css';
 import { StudentMenu } from '../../../components/Student';
 import icons from '../../../assets/images/icons/icons';
 import Panel from '../../../components/Panel/Panel';
 
 const Query = () => {
   return (
-    <div className="query_container">
+    <div className={styles.queryContainer}>
       <StudentMenu studentName={'Ana Clara'} />
-      <div className="query_side_content">
+      <div className={styles.querySideContent}>
         <Panel pageName="Painel do Aluno" section="Consultas" color="#677C91" />
-        <div className="query_info">
-          <div className="query_title">
-            <p className="query_title_text">Consultas</p>
+        <div className={styles.queryInfo}>
+          <div className={styles.queryTitle}>
+            <p className={styles.queryTitleText}>Consultas</p>
           </div>
-          <div className="query_card">
-            <div className="card_titles">
+          <div className={styles.queryCard}>
+            <div className={styles.cardTitles}>
               <p>Faltas</p>
               <img src={icons.arrowLeft.src} alt={icons.arrowLeft.alt} />
             </div>
-            <div className="card_content">
+            <div className={styles.cardContent}>
               <p>Cheque suas faltas durante o semestre ou toda sua jornada acadêmica.</p>
             </div>
           </div>
-          <div className="query_card">
-            <div className="card_titles">
+          <div className={styles.queryCard}>
+            <div className={styles.cardTitles}>
               <p>Notas</p>
               <img src={icons.arrowLeft.src} alt={icons.arrowLeft.alt} />
             </div>
-            <div className="card_content">
+            <div className={styles.cardContent}>
               <p>Cheque suas notas durante o semestre ou toda sua jornada acadêmica.</p>
             </div>
           </div>
-          <div className="query_card">
-            <div className="card_titles">
+          <div className={styles.queryCard}>
+            <div className={styles.cardTitles}>
               <p>Aulas</p>
               <img src={icons.arrowLeft.src} alt={icons.arrowLeft.alt} />
             </div>
-            <div className="card_content">
+            <div className={styles.cardContent}>
               <p>Cheque suas aulas de todo o curso e todo seu histórico de matérias.</p>
             </div>
           </div>
-          <div className="query_card">
-            <div className="card_titles">
+          <div className={styles.queryCard}>
+            <div className={styles.cardTitles}>
               <p>Histórico</p>
               <img src={icons.arrowLeft.src} alt={icons.arrowLeft.alt} />
             </div>
-            <div className="card_content">
+            <div className={styles.cardContent}>
               <p>Cheque todo seu histórico da faculdade até hoje, de notas e faltas.</p>
             </div>
           </div>

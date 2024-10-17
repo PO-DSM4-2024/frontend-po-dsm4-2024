@@ -15,7 +15,7 @@ body {
   overflow-x: hidden;
 }
 
-.absence_container {
+.absenceContainer {
   top: 0;
   width: 100vw;
   background-color: #f2f2f2;
@@ -23,7 +23,7 @@ body {
   font-family: nunito;
 }
 
-.absence_side_content {
+.absenceSideContent {
   position: absolute;
   right: 0;
   top: 0;
@@ -33,7 +33,7 @@ body {
   margin-left: 19.1%;
 }
 
-.absence_info {
+.absenceInfo {
   width: 100%;
   display: flex;
   align-items: center;
@@ -41,130 +41,115 @@ body {
   flex-direction: column;
 }
 
-.absence_card {
+.absenceCard {
   width: 95%;
   background-color: white;
-
   margin-top: 52px;
   margin-bottom: 52px;
   border-radius: 5px;
 }
 
-.absence_card_title {
+.absenceCardTitle {
   display: flex;
   align-items: start;
   flex-direction: column;
 }
 
-.absence_card_title p {
+.absenceCardTitle p {
   font-size: 32px;
   font-weight: 500;
   color: #2c3e50;
-  margin: 20px 0px 20px 40px;
+  margin: 20px 0 20px 40px;
 }
 
-.absence_card_title hr {
+.absenceCardTitle hr {
   background-color: #f2f2f2;
   width: 200px;
   height: 4px;
-
   outline: none;
   border: none;
-
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
 }
 
-.absence_card_subject {
-  margin: 36px 40px 36px 40px;
+.absenceCardSubject {
+  margin: 36px 40px;
   display: flex;
   align-items: center;
-
   column-gap: 10px;
 }
 
-.absence_card_subject span {
+.absenceCardSubject span {
   font-size: 22px;
   font-weight: 300;
   color: #000;
-
   display: inline-block;
 }
 
-.absence_card_subject select {
+.absenceCardSubject select {
   font-size: 18px;
   font-weight: 300;
   color: #3f3f3f;
   background-color: #f2f2f2;
-
   border: none;
   outline: none;
   border-radius: 10px;
-
   width: 300px;
-  padding: 5px 10px 5px 10px;
+  padding: 5px 10px;
 }
 
-.absence_card_table {
+.absenceCardTable {
   width: 100%;
   padding: 20px 40px 40px 40px;
 }
 
-.absence_card_table_header {
+.absenceCardTableHeader {
   width: 100%;
 }
 
-.absence_card_table_body {
+.absenceCardTableBody {
   width: 100%;
-
-  margin: 20px 0px -2px 0px;
+  margin: 20px 0 -2px 0;
 }
 
-.absence_header {
+.absenceHeader {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.absence_header_acronym {
+.absenceHeaderAcronym {
   margin-left: 120px;
 }
 
-.absence_header_total_classes {
+.absenceHeaderTotalClasses {
   margin-right: -30px;
 }
 
-.absence_body {
+.absenceBody {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.absence_header h1 {
+.absenceHeader h1 {
   font-size: 24px;
   color: #233058;
   font-weight: bold;
-
   line-height: 4rem;
 }
 
-.absence_body h2 {
+.absenceBody h2 {
   font-size: 24px;
   color: #3f3f3f;
   font-weight: bold;
-
   line-height: 4rem;
 }
 
-.absence_card_table_body hr {
+.absenceCardTableBody hr {
   border: none;
   outline: none;
-
   height: 2px;
   background-color: #677c91;
-
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
+  border-radius: 10px;
 }

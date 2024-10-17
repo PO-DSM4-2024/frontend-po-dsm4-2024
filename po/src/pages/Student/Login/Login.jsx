@@ -1,4 +1,4 @@
-import './Login.css';
+import styles from './Login.module.css'; // Atualizado para usar CSS Modules
 import { Link } from 'react-router-dom';
 import useAuthStore from '../../../store/useAuthStore';
 import { useForm } from 'react-hook-form';
@@ -29,46 +29,56 @@ const Login = () => {
     login(data.email, data.password);
   };
 
-  console.log('errors', errors);
-
   return (
-    <div className="login-container">
-      <div className="login-left">
-        <img src={logos.blueHalf.src} alt={logos.blueHalf.alt} id="mini-logo" />
-        <div className="login_left_title">
+    <div className={styles.loginContainer}>
+      <div className={styles.loginLeft}>
+        <img src={logos.blueHalf.src} alt={logos.blueHalf.alt} id={styles.miniLogo} />
+        <div className={styles.loginLeftTitle}>
           <h1>Portal do Aluno</h1>
           <p>Faça o login para acessar a sua conta</p>
         </div>
         <form onSubmit={handleSubmit(onSubmit)}>
-          <div className="input-group">
+          <div className={styles.inputGroup}>
             {errors.email && errors.password && (
-              <p style={{ color: 'red', textWrap: 'nowrap' }}>Email ou senha incorreto. Tente novamente!</p>
+              <p style={{ color: 'red', whiteSpace: 'nowrap' }}>Email ou senha incorreto. Tente novamente!</p>
             )}
-            <img src={errors.email ? icons.emailRed.src : icons.email.src} alt={icons.email.alt} className='img-inputs' />
-            <input type="text" {...register('email')} className={errors.email ? 'input-error' : 'input-form-student'} placeholder="E-mail Institucional" required />
+            <img src={errors.email ? icons.emailRed.src : icons.email.src} alt={icons.email.alt} className={styles.imgInputs} />
+            <input
+              type="text"
+              {...register('email')}
+              className={errors.email ? styles.inputError : styles.inputFormStudent}
+              placeholder="E-mail Institucional"
+              required
+            />
           </div>
-          <div className="input-group">
-            <img src={errors.password ? icons.lockRed.src : icons.lock.src} className='img-inputs'/>
-            <input type="password" {...register('password')} className={errors.password ? 'input-error' : 'input-form-student'} placeholder="Senha" required />
+          <div className={styles.inputGroup}>
+            <img src={errors.password ? icons.lockRed.src : icons.lock.src} className={styles.imgInputs} />
+            <input
+              type="password"
+              {...register('password')}
+              className={errors.password ? styles.inputError : styles.inputFormStudent}
+              placeholder="Senha"
+              required
+            />
           </div>
 
-          <button type="submit" className="login-button-student">
+          <button type="submit" className={styles.loginButtonStudent}>
             Entrar
           </button>
 
           {error && <p style={{ color: 'red' }}>{error}</p>}
-          <div className="login_left_bottom">
-            <Link className="forgot-link-student" to={'/professor/teacherLogin'}>
+          <div className={styles.loginLeftBottom}>
+            <Link className={styles.forgotLinkStudent} to={'/professor/teacherLogin'}>
               Sou funcionário
             </Link>
           </div>
         </form>
       </div>
-      <div className="login-right">
-        <div className="login-logo">
+      <div className={styles.loginRight}>
+        <div className={styles.loginLogo}>
           <img src={logos.white.src} alt={logos.white.alt} />
         </div>
-        <img src={general.banner.src} alt={general.banner.alt} className="login-image" />
+        <img src={general.banner.src} alt={general.banner.alt} className={styles.loginImage} />
       </div>
     </div>
   );

@@ -9,7 +9,7 @@
   box-sizing: border-box;
 }
 
-.rollcall-container {
+.rollcallContainer {
   font-family: nunito;
   display: flex;
   flex-direction: row;
@@ -18,7 +18,7 @@
   background-color: #f5f5f5;
 }
 
-.rollcall_side_contents {
+.rollcallSideContents {
   top: 0;
   width: 81%;
   height: 100%;
@@ -30,7 +30,7 @@
   align-items: center;
 }
 
-.rollcall_info_top {
+.rollcallInfoTop {
   width: 92%;
   height: 16%;
   display: flex;
@@ -39,7 +39,7 @@
   margin: 49px;
 }
 
-.rollcall_info {
+.rollcallInfo {
   width: 100%;
   height: 100vh;
   align-items: center;
@@ -47,16 +47,15 @@
   display: flex;
 }
 
-.unit_identify{
+.unitIdentify {
   font-size: 20px;
   margin-top: -71px;
   margin-left: 247px;
 }
 
-
-.filters{
+.filters {
   display: flex;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
   gap: 10px;
   align-items: center;
   width: 100%;
@@ -66,7 +65,7 @@ label {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 5px; 
+  gap: 5px;
   font-family: nunito;
   width: 100%;
 }
@@ -82,7 +81,7 @@ select {
   font-family: nunito;
 }
 
-.search-bar input{
+.searchBar input {
   height: 50px;
   width: 300px;
   outline: none;
@@ -94,20 +93,19 @@ select {
   margin-top: 15px;
 }
 
-.attendance-table {
+.attendanceTable {
   width: 95%;
   margin-top: 25px;
   border-collapse: collapse;
 }
 
- .attendance-table td {
+.attendanceTable td {
   border: 1px solid #ddd;
   padding: 10px;
   text-align: center;
 }
 
-
-.student-info {
+.studentInfo {
   display: flex;
   align-items: center;
 }
@@ -119,7 +117,7 @@ select {
   font-weight: bold;
 }
 
-.update-button {
+.updateButton {
   margin-top: 20px;
   padding: 10px 20px;
   background-color: #ff6600;
@@ -130,6 +128,6 @@ select {
   margin-right: -1194px;
 }
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   display: none;
 }

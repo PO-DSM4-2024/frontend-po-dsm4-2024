@@ -17,12 +17,12 @@ body {
   background-color: #f2f2f2;
 }
 
-.home_container {
+.homeContainer {
   width: 100vw;
   background-color: #f2f2f2;
 }
 
-.home_side_contents {
+.homeSideContents {
   top: 0;
   width: 81%;
   height: 100%;
@@ -34,7 +34,7 @@ body {
   align-items: center;
 }
 
-.home_info_top {
+.homeInfoTop {
   width: 90%;
   height: 50%;
   display: flex;
@@ -43,7 +43,7 @@ body {
   margin: 30px;
 }
 
-.home_info {
+.homeInfo {
   width: 100%;
   height: 100vh;
   align-items: center;
@@ -51,13 +51,13 @@ body {
   display: flex;
 }
 
-.home_info_below {
+.homeInfoBelow {
   margin: 30px;
   width: 90%;
   height: 40%;
 }
 
-.home_info_below {
+.homeInfoBelow {
   background-color: #ffffff;
   padding: 20px;
   border-radius: 7px;
@@ -67,7 +67,7 @@ body {
   margin-bottom: 2%;
 }
 
-.home_profile_student, .home_calendar {
+.homeProfileStudent, .homeCalendar {
   background-color: #ffffff;
   padding: 20px;
   border-radius: 7px;
@@ -76,61 +76,61 @@ body {
   height: auto;  
 }
 
-div.card_title  {
+.cardTitle {
   display: flex;
   flex-direction: row; 
   justify-content: flex-start;
   align-items: center;
   gap: 5px; 
   margin-bottom: 16px;
-  color: 'black';
+  color: black;
 }
 
-.card_title > div {
-  color: 'black';
+.cardTitle > div {
+  color: black;
   background-color: #333;
 }
 
-.home_profile_student .student_info {
+.homeProfileStudent .studentInfo {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 10px;
 }
 
-.home_profile_student .student_info p {
+.homeProfileStudent .studentInfo p {
   margin: 0;
 }
 
-.home_profile_student div:nth-of-type(2) {
+.homeProfileStudent div:nth-of-type(2) {
   margin-bottom: 10px;
 }
 
-.home_profile_student p {
+.homeProfileStudent p {
   margin: 5px 0;
 }
 
-.home_profile_student div:nth-of-type(3) p {
+.homeProfileStudent div:nth-of-type(3) p {
   font-weight: bold;
   font-size: 16px;
   margin-top: 60px; 
 }
 
-.home_calendar p {
+.homeCalendar p {
   font-size: 14px;
   color: #333;
   margin: 5px 0;
 }
 
-.home_calendar .card_title p {
+.homeCalendar .cardTitle p {
   font-size: 32px;
 }
 
-.home_calendar p:nth-of-type(2), .home_calendar p:nth-of-type(4) {
+.homeCalendar p:nth-of-type(2), .homeCalendar p:nth-of-type(4) {
   font-weight: bold;
 }
 
-.home_calendar div:nth-of-type(4) p {
+.homeCalendar div:nth-of-type(4) p {
   font-weight: bold;
   font-size: 16px;
   margin-top: 30px; 
