@@ -1,12 +1,12 @@
 import styles from './RollCall.module.css';
-import { TeacherMenu } from '../../../components/Professor';
+import Menu from '../../../components/Professor/TeacherMenu/TeacherMenu'
 import Panel from '../../../components/Panel/Panel';
 import icons from '../../../assets/images/icons/icons';
 
 const RollCall = () => {
   return (
     <div className={styles.rollcallContainer}>
-      <TeacherMenu studentName={'Sandra'} />
+      <Menu studentName={'Sandra'} />
       <div className={styles.rollcallSideContents}>
         <Panel pageName="Portal do Professor" section="Início/Alunos/Presença" color="#F66B0E" />
         <h3 className={styles.unitIdentify}>Unidade de Ensino: Nome da Instituição</h3>

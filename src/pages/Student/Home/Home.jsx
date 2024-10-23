@@ -1,4 +1,4 @@
-import { StudentMenu } from '../../../components/Student';
+import Menu from '../../../components/Student/Menu/Menu';
 import Panel from '../../../components/Panel/Panel';
 import icons from '../../../assets/images/icons/icons';
 import styles from './Home.module.css';
@@ -6,7 +6,7 @@ import styles from './Home.module.css';
 const Home = () => {
   return (
     <div className={styles.homeContainer}>
-      <StudentMenu studentName={'Ana Clara'} />
+      <Menu studentName={'Ana Clara'} />
       <div className={styles.homeSideContents}>
         <Panel pageName="Painel do Aluno" section="Início" color="#F66B0E" />
         <div className={styles.homeInfo}>

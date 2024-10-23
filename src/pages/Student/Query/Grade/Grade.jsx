@@ -1,12 +1,12 @@
 import styles from './Grade.module.css';
-import { StudentMenu } from '../../../../components/Student';
+import Menu from '../../../../components/Student/Menu/Menu';
 import icons from '../../../../assets/images/icons/icons';
 import Panel from '../../../../components/Panel/Panel';
 
 const Grades = () => {
   return (
     <div className={styles.gradesContainer}>
-      <StudentMenu studentName={'Ana Clara'} />
+      <Menu studentName={'Ana Clara'} />
       <div className={styles.gradesSideContent}>
         <Panel pageName="Painel do Aluno" section="Consultas/Notas" color="#677C91" />
 

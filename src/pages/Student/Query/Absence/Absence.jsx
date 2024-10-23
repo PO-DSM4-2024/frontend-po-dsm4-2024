@@ -1,11 +1,11 @@
 import styles from './Absence.module.css';
-import { StudentMenu } from '../../../../components/Student';
+import Menu from '../../../../components/Student/Menu/Menu';
 import Panel from '../../../../components/Panel/Panel';
 
 const Absence = () => {
   return (
     <div className={styles.absenceContainer}>
-      <StudentMenu studentName={'Ana Clara'} />
+      <Menu studentName={'Ana Clara'} />
       <div className={styles.absenceSideContent}>
         <Panel pageName="Painel do Aluno" section="Consultas/Faltas" color="#677C91" />
         <div className={styles.absenceInfo}>

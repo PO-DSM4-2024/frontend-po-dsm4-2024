@@ -1,11 +1,11 @@
 import styles from './Class.module.css';
-import { StudentMenu } from '../../../../components/Student';
+import Menu from '../../../../components/Student/Menu/Menu';
 import Panel from '../../../../components/Panel/Panel';
 
 const Class = () => {
   return (
     <div className={styles.classesContainer}>
-      <StudentMenu studentName={'Ana Clara'} />
+      <Menu studentName={'Ana Clara'} />
       <div className={styles.classesSideContent}>
         <Panel pageName="Painel do Aluno" section="Consultas/Aulas" color="#677C91" />
         <div className={styles.classesInfo}>
