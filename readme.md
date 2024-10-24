@@ -2,11 +2,11 @@
 
 Seja bem vindo ao front-end do projeto de portifólio online (PO) do segundo semestre de 2024. Está é uma aplicação web de um sistema de educação fictício. Aqui está uma visão simplificada do que você verá neste README:
 
-- Sobre o Projeto
-- Tecnologias Utilizadas
-- Funcionalidades
-- Instalação
-- Uso
+1. Sobre o Projeto
+2. Tecnologias Utilizadas
+3. Funcionalidades
+4. Instalação
+5. Uso
 
 ## 📖 Sobre o Projeto
 
